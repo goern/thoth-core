@@ -2,8 +2,8 @@ Feature: Analyse Software Stack (in a Container Image) and get Recommendations
 
     Background: Test Environment
         Given I am using the TEST environement
+    #        And the TEST database is empty
 
-    @wip
     Scenario Outline: Submitting a Container Image for analysis
         When I submit <a container image> to the User API for analysis by <analyser image>
         Then I want to receive a Analyser Job ID
@@ -14,19 +14,15 @@ Feature: Analyse Software Stack (in a Container Image) and get Recommendations
             | a container image | analyser image               |
             | fedora:27         | fridex/thoth-package-extract |
 
-    @wip
     Scenario: Query for currently available Analyser Results
         When I query the Result API for a list of analyser results
         Then the list of results should not be empty
 
-    @wip
     Scenario: Get the Analyser Results for my last submitted Container Image
         When I query the Result API for my latest analyser result
         Then the result should not be empty
         And the analyser should be "thoth-package-extract"
         And the analyser version should be "1.0.0"
-<<<<<<< HEAD:features/analyse_container_image.feature
-=======
 
     @wip
     Scenario Outline: Finished analysing a software stack
@@ -43,4 +39,3 @@ Feature: Analyse Software Stack (in a Container Image) and get Recommendations
         Then I want to receive a Recommdation
         And the recommendation should be "thoth-recommendation"
         And the recommendation version should be "0.1.0"
->>>>>>> db1998c... renamed the feature:features/analyse_software_stack.feature

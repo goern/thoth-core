@@ -47,21 +47,27 @@ def step_impl(context, a_container_image, analyser_image):
 
 @when(u'I query the Result API for my latest analyser result')
 def step_impl(context):
-    payload = {
-        'pod_id': context.analyzer_job_id
-    }
     r = requests.get(
-        f'{context.endpoint_url}/log', params=payload)
+        f'{context.endpoint_url}/analyze')
 
     assert_that(r.status_code, equal_to(HTTPStatus.OK))
     assert_that(r.headers['content-type'], equal_to('application/json'))
 
-    analyzer_job_log = r.json()
-    assert_that(analyzer_job_log, not_none)
+    analyzer_results = r.json()
+    assert_that(analyzer_results, not_none)
 
-    assert_that(analyzer_job_log['pod_id'], equal_to(context.analyzer_job_id))
+    context.chosen_result = analyzer_results['results'][0]
 
-    context.analyzer_job_log = analyzer_job_log
+    r = requests.get(
+        f'{context.endpoint_url}/analyze/{context.chosen_result}')
+
+    assert_that(r.status_code, equal_to(HTTPStatus.OK))
+    assert_that(r.headers['content-type'], equal_to('application/json'))
+
+    analyzer_results_json = r.json()
+    assert_that(analyzer_results_json, not_none)
+
+    context.chosen_result_json = analyzer_results_json
 
 
 @then(u'I want to receive a Analyser Job ID')
@@ -84,11 +90,8 @@ def step_impl(context):
     while not analyzer_job_terminated:
         time.sleep(5)
 
-        payload = {
-            'pod_id': context.analyzer_job_id
-        }
         r = requests.get(
-            f'{context.endpoint_url}/status', params=payload)
+            f'{context.endpoint_url}/status/{context.analyzer_job_id}')
 
         assert_that(r.status_code, equal_to(HTTPStatus.OK))
         assert_that(r.headers['content-type'], equal_to('application/json'))
@@ -107,11 +110,8 @@ def step_impl(context):
 
 @then(u'the Analyzer Job Log should not be empty')
 def step_impl(context):
-    payload = {
-        'pod_id': context.analyzer_job_id
-    }
     r = requests.get(
-        f'{context.endpoint_url}/log', params=payload)
+        f'{context.endpoint_url}/log/{context.analyzer_job_id}')
 
     assert_that(r.status_code, equal_to(HTTPStatus.OK))
     assert_that(r.headers['content-type'], equal_to('application/json'))

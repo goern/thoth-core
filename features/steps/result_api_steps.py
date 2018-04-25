@@ -26,12 +26,6 @@ from behave import given, when, then
 from hamcrest import assert_that, equal_to, is_not, not_none
 
 
-@given('I am using the TEST environement')
-def step_impl(context):
-    # TODO read this from ENV
-    context.endpoint_url = 'http://user-api-thoth-test-core.cloud.upshift.engineering.redhat.com/api/v1'
-
-
 @when('I query the Result API for a list of analyser results')
 def step_impl(context):
     r = requests.get(f'{context.endpoint_url}/analyze')
@@ -120,3 +114,9 @@ def step_impl(context, name):
 def step_impl(context, version):
     assert_that(context.chosen_result_json['metadata']['analyzer_version'],
                 equal_to(version))
+
+
+@then(u'I wait for the analysis to be finished')
+def step_impl(context):
+    raise NotImplementedError(
+        u'STEP: Then I wait for the analysis to be finished')
