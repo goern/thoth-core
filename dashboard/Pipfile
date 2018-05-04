@@ -13,6 +13,8 @@ gunicorn = "*"
 daiquiri = "*"
 prometheus-client = "*"
 pygithub = "*"
+openshift = "*"
+kubernetes = "*"
 
 
 [dev-packages]
