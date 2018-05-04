@@ -28,11 +28,13 @@ import daiquiri
 
 from github import Github
 
+import openshift.client
+from kubernetes.client.rest import ApiException
 
 DEBUG = bool(os.getenv('DEBUG', False))
 
 daiquiri.setup(level=logging.INFO)
-logger = daiquiri.getLogger('label_checker')
+logger = daiquiri.getLogger('utils')
 
 if DEBUG:
     logger.setLevel(level=logging.DEBUG)
@@ -41,6 +43,7 @@ else:
 
 
 def getOpenPullRequests() -> List:
+    """This will get a list of open Pull Requests for all repositories of the Thoth-Station organisation"""
     SESHETA_GITHUB_ACCESS_TOKEN = os.getenv(
         'SESHETA_GITHUB_ACCESS_TOKEN', None)
 
@@ -68,3 +71,37 @@ def getOpenPullRequests() -> List:
         })
 
     return prs
+
+
+def getBuildConfigForPullRequest(component: str, number: int) -> dict:
+    SESHETA_OPENSHIFT_ACCESS_TOKEN = os.getenv(
+        'SESHETA_OPENSHIFT_ACCESS_TOKEN', None)
+    THOTH_NAMESPACE = os.getenv(
+        'THOTH_NAMESPACE', 'thoth-test-core')
+
+    if not SESHETA_OPENSHIFT_ACCESS_TOKEN:
+        logger.error(
+            'OpenShift Token not provided via environment variable SESHETA_OPENSHIFT_ACCESS_TOKEN')
+        return None
+
+    configuration = openshift.client.Configuration()
+    configuration.api_key['authorization'] = SESHETA_OPENSHIFT_ACCESS_TOKEN
+    configuration.api_key_prefix['authorization'] = 'Bearer'
+    configuration.host = 'https://upshift.engineering.redhat.com'
+    configuration.verify_ssl = False
+
+    api_instance = openshift.client.BuildOpenshiftIoV1Api(
+        openshift.client.ApiClient(configuration))
+
+    logger.debug(api_instance)
+
+    try:
+        api_response = api_instance.list_namespaced_build(THOTH_NAMESPACE)
+        print(api_response)
+    except ApiException as e:
+        logger.error(
+            "Exception when calling BuildOpenshiftIoV1Api->list_namespaced_build: %s\n" % e)
+
+
+if __name__ == '__main__':
+    getBuildConfigForPullRequest('user-api', 101)
