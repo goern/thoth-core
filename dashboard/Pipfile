@@ -1,0 +1,24 @@
+[[source]]
+
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+
+[packages]
+
+requests = "*"
+flask = "*"
+gunicorn = "*"
+daiquiri = "*"
+prometheus-client = "*"
+pygithub = "*"
+
+
+[dev-packages]
+
+pytest = "*"
+pylint = "*"
+"autopep8" = "*"
+behave = "*"
+pyhamcrest = "*"
