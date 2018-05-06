@@ -24,7 +24,7 @@ import logging
 
 import daiquiri
 
-from flask import Flask, Response, jsonify, request
+from flask import Flask, Response, jsonify, request, render_template
 from flask.helpers import make_response
 
 from prometheus_client import CONTENT_TYPE_LATEST
@@ -32,6 +32,7 @@ from prometheus_client import Counter, Histogram
 from prometheus_client import core, generate_latest
 
 import utils
+import exceptions
 
 __version__ = '0.1.0'
 __description__ = 'Thoth: SrcOps and DevOps Dashboard'
@@ -46,7 +47,7 @@ FLASK_REQUEST_COUNT = Counter('flask_request_count', 'Flask Request Count',
                               ['method', 'endpoint', 'http_status'])
 
 daiquiri.setup(level=logging.INFO)
-logger = daiquiri.getLogger('ops-dashboard')
+logger = daiquiri.getLogger('dashboard_service')
 
 if DEBUG:
     logger.setLevel(level=logging.DEBUG)
@@ -102,13 +103,104 @@ def index():
 
 
 @application.route('/pullrequests')
-def getOpenPullRequests():
-    open_prs = utils.getOpenPullRequests()
+def getPullRequests():
+    include_closed = request.args.get('includeClosed')
 
-    return jsonify(open_prs)
+    if include_closed is None:
+        include_closed = False
+
+    logger.debug(f'requesting closed and open pull requests: {include_closed}')
+
+    try:
+        open_prs = utils.getPullRequests(include_closed)
+
+        return jsonify(open_prs)
+
+    except exceptions.ThothDashboardServiceMissingAuthToken as e:
+        logger.error(e)
+
+        resp = jsonify({'error': e.message})
+        resp.headers['Retry-After'] = '180'
+        return resp, 503
+
+
+@application.route('/pullrequests/<int:number>')
+def getPullRequestByNumber(number: int):
+    try:
+        prs = utils.getPullRequestByNumber(number)
+
+        return jsonify(prs)
+
+    except exceptions.ThothDashboardServiceMissingAuthToken as e:
+        logger.error(e)
+
+        resp = jsonify({'error': e.message})
+        resp.headers['Retry-After'] = '180'
+        return resp, 503
+
+
+@application.route('/imageStreamTags')
+def getImageStreamsTags():
+    try:
+        ist = utils.getImageStreamTags()
+
+        return jsonify(ist)
+
+    except exceptions.ThothDashboardServiceMissingAuthToken as e:
+        logger.error(e)
+
+        resp = jsonify({'error': e.message})
+        resp.headers['Retry-After'] = '180'
+        return resp, 503
+
+    except exceptions.ThothDashboardServiceOpenShiftUnavailable as e:
+        logger.error(e.message)
+
+        return jsonify({'error': e.message}), 500
+
+
+@application.route('/imageStreamTags/<sha>')
+def getImageStreamsTagsBySha(sha):
+    try:
+        tag = utils.getImageStreamTagBySha(sha)
+
+        return jsonify(tag)
+
+    except exceptions.ThothDashboardServiceMissingAuthToken as e:
+        logger.error(e)
+
+        resp = jsonify({'error': e.message})
+        resp.headers['Retry-After'] = '180'
+        return resp, 503
+
+    except exceptions.ThothDashboardServiceOpenShiftUnavailable as e:
+        logger.error(e.message)
+
+        return jsonify({'error': e.message}), 500
+
+
+@application.route('/containers/<deploymentconfig>')
+def getContainersByDeploymentConfig(deploymentconfig):
+    try:
+        pods = utils.getContainersByDeploymentConfig(deploymentconfig)
+
+        return jsonify(pods)
+
+    except exceptions.ThothDashboardServiceMissingAuthToken as e:
+        logger.error(e)
+
+        resp = jsonify({'error': e.message})
+        resp.headers['Retry-After'] = '180'
+        return resp, 503
+
+    except exceptions.ThothDashboardServiceOpenShiftUnavailable as e:
+        logger.error(e.message)
+
+        return jsonify({'error': e.message}), 500
 
 
 if __name__ == "__main__":
     logger.info(
-        f'Thoth Naming Service v{__version__}+{__git_commit_id__}')
+        f'Thoth SrcOps and DevOps Dashboard Service v{__version__}+{__git_commit_id__}')
+
     application.run(host='0.0.0.0', port=8080, debug=DEBUG)
