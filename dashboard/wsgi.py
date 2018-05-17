@@ -199,6 +199,54 @@ def getContainersByDeploymentConfig(deploymentconfig):
         return jsonify({'error': e.message}), 500
 
 
+@application.route('/builds')
+def getBuilds():
+    try:
+        builds = utils.getBuildByOutputImageSha(
+            'sha256:5d44cc5e7fb741b126fc3910c0a06884413232e2ea84cf3cb4257327b226c4b1')
+
+        return jsonify(builds)
+
+    except exceptions.ThothDashboardServiceMissingAuthToken as e:
+        logger.error(e)
+
+        resp = jsonify({'error': e.message})
+        resp.headers['Retry-After'] = '180'
+        return resp, 503
+
+    except exceptions.ThothDashboardServiceOpenShiftUnavailable as e:
+        logger.error(e.message)
+
+        return jsonify({'error': e.message}), 500
+
+
+@application.route('/deploymentStatus/<deploymentconfig>')
+def getStatusByDeploymentConfig(deploymentconfig):
+    try:
+        pods = utils.getContainersByDeploymentConfig(deploymentconfig)
+
+        # FIXME there might be more than one pod!
+        ist = utils.getImageStreamTagBySha(pods[0]['pod']['image']['sha'])
+        pods[0]['pod']['image']['tag'] = ist
+
+        # add the source reference
+        pods[0]['source'] = {}
+
+        return jsonify(pods)
+
+    except exceptions.ThothDashboardServiceMissingAuthToken as e:
+        logger.error(e)
+
+        resp = jsonify({'error': e.message})
+        resp.headers['Retry-After'] = '180'
+        return resp, 503
+
+    except exceptions.ThothDashboardServiceOpenShiftUnavailable as e:
+        logger.error(e.message)
+
+        return jsonify({'error': e.message}), 500
+
+
 if __name__ == "__main__":
     logger.info(
         f'Thoth SrcOps and DevOps Dashboard Service v{__version__}+{__git_commit_id__}')

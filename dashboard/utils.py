@@ -114,6 +114,39 @@ def getPullRequestByNumber(number: int) -> List:
     return prs
 
 
+def getBuildByOutputImageSha(sha: str) -> List:
+    api_instance = openshift.client.BuildOpenshiftIoV1Api(
+        openshift.client.ApiClient(_getOpenShiftConfiguration()))
+
+    builds = []
+
+    try:
+        api_response = api_instance.list_namespaced_build(
+            THOTH_NAMESPACE)
+
+        for builds in api_response.items:
+            try:
+                for build in builds:
+                    builds.append({
+                        'name': build.metadata.name
+                    })
+            except TypeError as e:
+                logger.error(
+                    f"While analysing {build.metadata.name}: {e}")
+                continue
+
+    except ApiException as e:
+        logger.error(
+            "Exception when calling BuildOpenshiftIoV1Api->list_namespaced_build: %s" % e)
+    except ValueError as e:
+        logger.error(
+            "Exception when calling BuildOpenshiftIoV1Api->list_namespaced_build: %s" % e)
+
+        raise exceptions.ThothDashboardServiceOpenShiftUnavailable()
+
+    return builds
+
+
 def getImageStreamTags() -> List:
     api_instance = openshift.client.ImageOpenshiftIoV1Api(
         openshift.client.ApiClient(_getOpenShiftConfiguration()))
@@ -149,10 +182,10 @@ def getImageStreamTags() -> List:
 
     except ApiException as e:
         logger.error(
-            "Exception when calling BuildOpenshiftIoV1Api->list_namespaced_build: %s" % e)
+            "Exception when calling ImageOpenshiftIoV1Api->list_namespaced_image_stream: %s" % e)
     except ValueError as e:
         logger.error(
-            "Exception when calling BuildOpenshiftIoV1Api->list_namespaced_build: %s" % e)
+            "Exception when calling ImageOpenshiftIoV1Api->list_namespaced_image_stream: %s" % e)
 
         raise exceptions.ThothDashboardServiceOpenShiftUnavailable()
 
@@ -192,15 +225,17 @@ def getContainersByDeploymentConfig(deploymentconfig) -> List:
                 ns, img = _splitImage(_img)
 
                 pods.append({
-                    'pod_name': pod.metadata.name,
-                    'image': {
-                        'fullRef': container.image,
-                        'registry': reg,
-                        'namespace': ns,
-                        'image': img,
-                        'sha': sha
-                    },
-                    'name': container.name
+                    'pod': {
+                        'name': pod.metadata.name,
+                        'image': {
+                            'fullRef': container.image,
+                            'registry': reg,
+                            'namespace': ns,
+                            'image': img,
+                            'sha': sha
+                        },
+                        'containerName': container.name
+                    }
                 })
 
     except ApiException as e:
