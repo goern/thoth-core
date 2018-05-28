@@ -1,0 +1,14 @@
+[{
+    "deploymentConfig": "user-api",
+    "pod": {
+        "containerName": "user-api",
+        "image": {
+            "fullRef": "docker-registry.default.svc:5000/thoth-test-core/user-api@sha256:2dae3dbcc31b9e32d0f20852acd729a8fefd27e4f7a8e2206495d521d148d1c5",
+            "image": "user-api",
+            "namespace": "thoth-test-core",
+            "registry": "docker-registry.default.svc:5000",
+            "sha": "sha256:2dae3dbcc31b9e32d0f20852acd729a8fefd27e4f7a8e2206495d521d148d1c5"
+        },
+        "name": "user-api-65-dp96q"
+    }
+}]

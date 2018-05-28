@@ -1,0 +1,4402 @@
+[{
+        "created_at": "Thu, 24 May 2018 20:49:21 GMT",
+        "id": 326288334,
+        "number": 5,
+        "repository": "kebechet",
+        "state": "open",
+        "title": "Remove approve label for auto approval",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 20:33:38 GMT",
+        "id": 326282016,
+        "number": 4,
+        "repository": "kebechet",
+        "state": "open",
+        "title": "updated Pipenv",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 19:14:51 GMT",
+        "id": 326254752,
+        "number": 29,
+        "repository": "solver",
+        "state": "closed",
+        "title": "Automatic update of dependency pip-tools from 2.0.1 to 2.0.2",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 18:34:15 GMT",
+        "id": 326241002,
+        "number": 23,
+        "repository": "result-api",
+        "state": "closed",
+        "title": "Automatic update of dependency thoth-storages from 0.0.28 to 0.0.29",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 18:31:22 GMT",
+        "id": 326240042,
+        "number": 24,
+        "repository": "package-releases-job",
+        "state": "closed",
+        "title": "Automatic update of dependency thoth-storages from 0.0.28 to 0.0.29",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 18:26:22 GMT",
+        "id": 326238396,
+        "number": 19,
+        "repository": "graph-sync-job",
+        "state": "closed",
+        "title": "Automatic update of dependency thoth-storages from 0.0.28 to 0.0.29",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 18:23:15 GMT",
+        "id": 326237317,
+        "number": 33,
+        "repository": "graph-refresh-job",
+        "state": "closed",
+        "title": "Automatic update of dependency thoth-storages from 0.0.28 to 0.0.29",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 18:14:11 GMT",
+        "id": 326234358,
+        "number": 28,
+        "repository": "solver",
+        "state": "closed",
+        "title": "Automatic update of dependency thoth-common from 0.0.3 to 0.0.6",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 18:11:53 GMT",
+        "id": 326233612,
+        "number": 27,
+        "repository": "solver",
+        "state": "closed",
+        "title": "Automatic update of dependency pip-tools from 2.0.1 to 2.0.2",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 17:47:16 GMT",
+        "id": 326225245,
+        "number": 2,
+        "repository": "kebechet",
+        "state": "closed",
+        "title": "some minor tweaks",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 17:07:21 GMT",
+        "id": 326211960,
+        "number": 18,
+        "repository": "graph-sync-job",
+        "state": "closed",
+        "title": "Automatic update of dependency thoth-storages from 0.0.25 to 0.0.28",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 16:58:43 GMT",
+        "id": 326209101,
+        "number": 26,
+        "repository": "solver",
+        "state": "closed",
+        "title": "Automatic update of dependency thoth-common from 0.0.3 to 0.0.6",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 16:56:49 GMT",
+        "id": 326208462,
+        "number": 25,
+        "repository": "solver",
+        "state": "closed",
+        "title": "Automatic update of dependency pip-tools from 2.0.1 to 2.0.2",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 16:55:11 GMT",
+        "id": 326207898,
+        "number": 24,
+        "repository": "solver",
+        "state": "closed",
+        "title": "Automatic update of dependency virtualenv from 15.2.0 to 16.0.0",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 16:53:05 GMT",
+        "id": 326207235,
+        "number": 22,
+        "repository": "result-api",
+        "state": "closed",
+        "title": "Automatic update of dependency thoth-storages from 0.0.27 to 0.0.28",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 16:51:08 GMT",
+        "id": 326206625,
+        "number": 74,
+        "repository": "core",
+        "state": "closed",
+        "title": "added the 'bot' label",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 16:51:01 GMT",
+        "id": 326206589,
+        "number": 23,
+        "repository": "package-releases-job",
+        "state": "closed",
+        "title": "Automatic update of dependency thoth-storages from 0.0.27 to 0.0.28",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 16:49:00 GMT",
+        "id": 326205924,
+        "number": 19,
+        "repository": "package-extract",
+        "state": "closed",
+        "title": "Automatic update of dependency pytest from 3.5.1 to 3.6.0",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 16:46:42 GMT",
+        "id": 326205137,
+        "number": 17,
+        "repository": "graph-sync-job",
+        "state": "closed",
+        "title": "Automatic update of dependency thoth-common from 0.0.5 to 0.0.6",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 16:45:10 GMT",
+        "id": 326204622,
+        "number": 16,
+        "repository": "graph-sync-job",
+        "state": "closed",
+        "title": "Automatic update of dependency thoth-storages from 0.0.25 to 0.0.28",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 16:43:10 GMT",
+        "id": 326203916,
+        "number": 32,
+        "repository": "graph-refresh-job",
+        "state": "closed",
+        "title": "Automatic update of dependency thoth-storages from 0.0.27 to 0.0.28",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 16:40:34 GMT",
+        "id": 326203001,
+        "number": 15,
+        "repository": "adviser",
+        "state": "closed",
+        "title": "Automatic update of dependency thoth-common from 0.0.5 to 0.0.6",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 16:38:56 GMT",
+        "id": 326202398,
+        "number": 14,
+        "repository": "adviser",
+        "state": "closed",
+        "title": "Automatic update of dependency thoth-storages from 0.0.25 to 0.0.28",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 16:19:37 GMT",
+        "id": 326195585,
+        "number": 22,
+        "repository": "common",
+        "state": "closed",
+        "title": "Automatic update of dependency thoth-storages from 0.0.26 to 0.0.28",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 16:06:59 GMT",
+        "id": 326190596,
+        "number": 21,
+        "repository": "common",
+        "state": "closed",
+        "title": "Automatic update of dependency thoth-storages from 0.0.26 to 0.0.27",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 16:05:12 GMT",
+        "id": 326189893,
+        "number": 20,
+        "repository": "common",
+        "state": "closed",
+        "title": "Automatic update of dependency rfc5424-logging-handler from 1.1.0 to 1.1.2",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 15:13:55 GMT",
+        "id": 326168400,
+        "number": 19,
+        "repository": "common",
+        "state": "closed",
+        "title": "Automatic update of dependency thoth-storages from 0.0.26 to 0.0.27",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 15:12:17 GMT",
+        "id": 326167682,
+        "number": 18,
+        "repository": "common",
+        "state": "closed",
+        "title": "Automatic update of dependency rfc5424-logging-handler from 1.1.0 to 1.1.2",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 12:53:00 GMT",
+        "id": 326108135,
+        "number": 17,
+        "repository": "common",
+        "state": "closed",
+        "title": "Automatic update of dependency thoth-storages from 0.0.18 to 0.0.18",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 12:52:34 GMT",
+        "id": 326107979,
+        "number": 16,
+        "repository": "common",
+        "state": "closed",
+        "title": "Automatic update of dependency rfc5424-logging-handler from 1.1.0 to 1.1.0",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 11:12:51 GMT",
+        "id": 326074226,
+        "number": 15,
+        "repository": "common",
+        "state": "closed",
+        "title": "Automatic update of dependency rfc5424-logging-handler from 1.1.0 to 1.1.2",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 11:10:07 GMT",
+        "id": 326073345,
+        "number": 14,
+        "repository": "common",
+        "state": "closed",
+        "title": "Automatic update of dependency rfc5424-logging-handler from 1.1.0 to 1.1.2",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 10:22:27 GMT",
+        "id": 326057699,
+        "number": 13,
+        "repository": "common",
+        "state": "closed",
+        "title": "Automatic dependency update for rfc5424-logging-handler to version 1.1.2",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 10:21:09 GMT",
+        "id": 326057281,
+        "number": 12,
+        "repository": "common",
+        "state": "closed",
+        "title": "Automatic dependency update for rfc5424-logging-handler to version 1.1.2",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 10:17:36 GMT",
+        "id": 326056021,
+        "number": 11,
+        "repository": "common",
+        "state": "closed",
+        "title": "Automatic dependency update for rfc5424-logging-handler to version 1.1.2",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 09:11:37 GMT",
+        "id": 326031200,
+        "number": 10,
+        "repository": "common",
+        "state": "closed",
+        "title": "Automatic dependency update for rfc5424-logging-handler to version 1.1.2",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 09:03:50 GMT",
+        "id": 326028187,
+        "number": 9,
+        "repository": "common",
+        "state": "closed",
+        "title": "Automatic dependency update for rfc5424-logging-handler to version 1.1.2",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 09:02:39 GMT",
+        "id": 326027739,
+        "number": 8,
+        "repository": "common",
+        "state": "closed",
+        "title": "Automatic dependency update for rfc5424-logging-handler to version 1.1.2",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 08:59:57 GMT",
+        "id": 326026744,
+        "number": 7,
+        "repository": "common",
+        "state": "closed",
+        "title": "Automatic dependency update for rfc5424-logging-handler to version 1.1.2",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 08:56:44 GMT",
+        "id": 326025568,
+        "number": 6,
+        "repository": "common",
+        "state": "closed",
+        "title": "Automatic dependency update for rfc5424-logging-handler to version 1.1.2",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 24 May 2018 08:06:48 GMT",
+        "id": 326008102,
+        "number": 73,
+        "repository": "core",
+        "state": "closed",
+        "title": "added kebechet to the bots",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Wed, 23 May 2018 08:47:42 GMT",
+        "id": 325607440,
+        "number": 22,
+        "repository": "package-releases-job",
+        "state": "closed",
+        "title": "Update thoth-common for rsyslog logging",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 23 May 2018 08:45:27 GMT",
+        "id": 325606647,
+        "number": 15,
+        "repository": "graph-sync-job",
+        "state": "closed",
+        "title": "Update thoth-common for rsyslog logging",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 23 May 2018 08:43:39 GMT",
+        "id": 325606002,
+        "number": 31,
+        "repository": "graph-refresh-job",
+        "state": "closed",
+        "title": "Update thoth-common for rsyslog logging",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 23 May 2018 08:41:14 GMT",
+        "id": 325605080,
+        "number": 16,
+        "repository": "cleanup-job",
+        "state": "closed",
+        "title": "Update thoth-common for rsyslog logging",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 23 May 2018 08:31:01 GMT",
+        "id": 325601386,
+        "number": 111,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update thoth-common for rsyslog logging",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 23 May 2018 08:28:52 GMT",
+        "id": 325600628,
+        "number": 21,
+        "repository": "result-api",
+        "state": "closed",
+        "title": "Update thoth-common for rsyslog logging",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 23 May 2018 08:27:33 GMT",
+        "id": 325600150,
+        "number": 23,
+        "repository": "solver",
+        "state": "closed",
+        "title": "Update thoth-common for rsyslog logging",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 23 May 2018 08:25:03 GMT",
+        "id": 325599248,
+        "number": 27,
+        "repository": "storages",
+        "state": "closed",
+        "title": "Update thoth-common for rsyslog logging",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 23 May 2018 08:21:27 GMT",
+        "id": 325598034,
+        "number": 18,
+        "repository": "package-extract",
+        "state": "closed",
+        "title": "Update thoth-common for rsyslog logging",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 23 May 2018 08:10:31 GMT",
+        "id": 325594482,
+        "number": 72,
+        "repository": "core",
+        "state": "closed",
+        "title": "Add missing rsyslog entries to configmap",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Tue, 22 May 2018 08:26:59 GMT",
+        "id": 325188981,
+        "number": 110,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Add rsyslog logging",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Tue, 22 May 2018 08:25:16 GMT",
+        "id": 325188393,
+        "number": 20,
+        "repository": "result-api",
+        "state": "closed",
+        "title": "Add rsyslog logging",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Tue, 22 May 2018 08:23:36 GMT",
+        "id": 325187853,
+        "number": 21,
+        "repository": "package-releases-job",
+        "state": "closed",
+        "title": "Add rsyslog logging",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Tue, 22 May 2018 08:21:31 GMT",
+        "id": 325187178,
+        "number": 14,
+        "repository": "graph-sync-job",
+        "state": "closed",
+        "title": "Add rsyslog logging",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Tue, 22 May 2018 08:19:51 GMT",
+        "id": 325186646,
+        "number": 30,
+        "repository": "graph-refresh-job",
+        "state": "closed",
+        "title": "Add rsyslog logging",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Tue, 22 May 2018 08:18:08 GMT",
+        "id": 325186105,
+        "number": 15,
+        "repository": "cleanup-job",
+        "state": "closed",
+        "title": "Add rsyslog logging",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Tue, 22 May 2018 08:14:10 GMT",
+        "id": 325184904,
+        "number": 71,
+        "repository": "core",
+        "state": "closed",
+        "title": "Add rsyslog configuration for logging",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Tue, 22 May 2018 08:13:59 GMT",
+        "id": 325184854,
+        "number": 70,
+        "repository": "core",
+        "state": "closed",
+        "title": "Apply buildconfigs on deployment",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Tue, 22 May 2018 08:05:13 GMT",
+        "id": 325182189,
+        "number": 5,
+        "repository": "common",
+        "state": "closed",
+        "title": "Add support for rsyslog logging endpoint",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Mon, 21 May 2018 10:56:03 GMT",
+        "id": 324873837,
+        "number": 69,
+        "repository": "core",
+        "state": "closed",
+        "title": "Create buildconfigs from templates",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Mon, 21 May 2018 08:35:04 GMT",
+        "id": 324832510,
+        "number": 68,
+        "repository": "core",
+        "state": "closed",
+        "title": "Fix deployment - oc tag has no confirm option",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 17 May 2018 16:38:03 GMT",
+        "id": 324100593,
+        "number": 20,
+        "repository": "package-releases-job",
+        "state": "closed",
+        "title": "Fix codestyle issue reported",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 17 May 2018 12:27:28 GMT",
+        "id": 324000982,
+        "number": 108,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Extend liveness probe with Ceph connection check",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 17 May 2018 10:56:59 GMT",
+        "id": 323972765,
+        "number": 28,
+        "repository": "graph-refresh-job",
+        "state": "closed",
+        "title": "Run coala in CI",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 17 May 2018 10:52:25 GMT",
+        "id": 323971337,
+        "number": 19,
+        "repository": "package-releases-job",
+        "state": "closed",
+        "title": "Run coala in CI",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 17 May 2018 10:45:48 GMT",
+        "id": 323969330,
+        "number": 107,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Test to trigger CI",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 17 May 2018 10:15:26 GMT",
+        "id": 323959291,
+        "number": 14,
+        "repository": "cleanup-job",
+        "state": "closed",
+        "title": "We use OpenShift s2i now for builds",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 17 May 2018 10:13:44 GMT",
+        "id": 323958741,
+        "number": 13,
+        "repository": "adviser",
+        "state": "closed",
+        "title": "CI fix",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 17 May 2018 09:54:42 GMT",
+        "id": 323951944,
+        "number": 4,
+        "repository": "common",
+        "state": "closed",
+        "title": "Run coala in CI",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 17 May 2018 09:52:32 GMT",
+        "id": 323951170,
+        "number": 26,
+        "repository": "storages",
+        "state": "closed",
+        "title": "Run coala in CI",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 17 May 2018 09:51:12 GMT",
+        "id": 323950691,
+        "number": 106,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Run Coala in CI",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 17 May 2018 09:41:31 GMT",
+        "id": 323947040,
+        "number": 105,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update storages",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 17 May 2018 09:30:44 GMT",
+        "id": 323942993,
+        "number": 25,
+        "repository": "storages",
+        "state": "closed",
+        "title": "Run tests in Travis CI",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 17 May 2018 09:28:21 GMT",
+        "id": 323942054,
+        "number": 13,
+        "repository": "graph-sync-job",
+        "state": "closed",
+        "title": "Update thoth-storages",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 17 May 2018 09:25:45 GMT",
+        "id": 323941098,
+        "number": 18,
+        "repository": "package-releases-job",
+        "state": "closed",
+        "title": "Update thoth-storages",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 17 May 2018 09:23:09 GMT",
+        "id": 323940174,
+        "number": 27,
+        "repository": "graph-refresh-job",
+        "state": "closed",
+        "title": "Update thoth-storages",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 17 May 2018 09:20:59 GMT",
+        "id": 323939391,
+        "number": 19,
+        "repository": "result-api",
+        "state": "closed",
+        "title": "Update thoth-storages",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 17 May 2018 07:03:32 GMT",
+        "id": 323895997,
+        "number": 66,
+        "repository": "core",
+        "state": "closed",
+        "title": "some adoptions...",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Wed, 16 May 2018 15:10:31 GMT",
+        "id": 323664991,
+        "number": 12,
+        "repository": "adviser",
+        "state": "closed",
+        "title": "Remove dependencies.yml",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 16 May 2018 15:10:20 GMT",
+        "id": 323664914,
+        "number": 11,
+        "repository": "adviser",
+        "state": "closed",
+        "title": "Use coala for code checks",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 16 May 2018 15:05:17 GMT",
+        "id": 323662762,
+        "number": 13,
+        "repository": "cleanup-job",
+        "state": "closed",
+        "title": "Use coala for code checks",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 16 May 2018 15:03:25 GMT",
+        "id": 323661986,
+        "number": 4,
+        "repository": "analyzer",
+        "state": "closed",
+        "title": "Use coala for code checks",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 16 May 2018 14:58:26 GMT",
+        "id": 323659882,
+        "number": 3,
+        "repository": "common",
+        "state": "closed",
+        "title": "Remove dependencies.yml",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 16 May 2018 14:57:04 GMT",
+        "id": 323659253,
+        "number": 5,
+        "repository": "lab",
+        "state": "closed",
+        "title": "Remove dependencies.yml",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 16 May 2018 14:56:54 GMT",
+        "id": 323659176,
+        "number": 4,
+        "repository": "lab",
+        "state": "closed",
+        "title": "Use coala for code checks",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 16 May 2018 14:50:52 GMT",
+        "id": 323656463,
+        "number": 2,
+        "repository": "common",
+        "state": "closed",
+        "title": "Use coala for code checks",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 16 May 2018 14:47:02 GMT",
+        "id": 323654744,
+        "number": 26,
+        "repository": "graph-refresh-job",
+        "state": "closed",
+        "title": "Use coala for code checks",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 16 May 2018 14:42:37 GMT",
+        "id": 323652833,
+        "number": 12,
+        "repository": "graph-sync-job",
+        "state": "closed",
+        "title": "Use coala for code checks",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 16 May 2018 14:37:17 GMT",
+        "id": 323650545,
+        "number": 17,
+        "repository": "package-releases-job",
+        "state": "closed",
+        "title": "Use coala for code checks",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 16 May 2018 14:32:25 GMT",
+        "id": 323648435,
+        "number": 103,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Use coala for code checks",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 16 May 2018 14:24:24 GMT",
+        "id": 323644845,
+        "number": 17,
+        "repository": "package-extract",
+        "state": "closed",
+        "title": "Remove dependencies.yml",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 16 May 2018 14:24:12 GMT",
+        "id": 323644735,
+        "number": 16,
+        "repository": "package-extract",
+        "state": "closed",
+        "title": "Use coala for code checks",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 16 May 2018 14:14:09 GMT",
+        "id": 323640397,
+        "number": 24,
+        "repository": "storages",
+        "state": "closed",
+        "title": "Use coala for code checks",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 16 May 2018 14:10:32 GMT",
+        "id": 323638801,
+        "number": 22,
+        "repository": "solver",
+        "state": "closed",
+        "title": "Remove dependencies.yml",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 16 May 2018 14:09:43 GMT",
+        "id": 323638464,
+        "number": 21,
+        "repository": "solver",
+        "state": "closed",
+        "title": "Use coala for code checks",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 16 May 2018 10:23:12 GMT",
+        "id": 323559954,
+        "number": 65,
+        "repository": "core",
+        "state": "closed",
+        "title": "added package-extract templates",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Tue, 15 May 2018 09:29:12 GMT",
+        "id": 323136819,
+        "number": 18,
+        "repository": "result-api",
+        "state": "closed",
+        "title": "Check connection with Ceph",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Tue, 15 May 2018 09:26:53 GMT",
+        "id": 323135929,
+        "number": 23,
+        "repository": "storages",
+        "state": "closed",
+        "title": "Introduce Ceph connection check",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Mon, 14 May 2018 08:55:31 GMT",
+        "id": 322726567,
+        "number": 22,
+        "repository": "storages",
+        "state": "closed",
+        "title": "Fix yarl issues",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Mon, 14 May 2018 08:46:54 GMT",
+        "id": 322723683,
+        "number": 21,
+        "repository": "storages",
+        "state": "closed",
+        "title": "Create initial tests",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Fri, 04 May 2018 14:47:01 GMT",
+        "id": 320303534,
+        "number": 13,
+        "repository": "package-releases-job",
+        "state": "closed",
+        "title": "expose metrics",
+        "user_login": "durandom"
+    },
+    {
+        "created_at": "Fri, 04 May 2018 06:13:31 GMT",
+        "id": 320163139,
+        "number": 11,
+        "repository": "graph-sync-job",
+        "state": "closed",
+        "title": "Remove travis, updated Dependencies",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Thu, 03 May 2018 14:22:21 GMT",
+        "id": 319942157,
+        "number": 64,
+        "repository": "core",
+        "state": "closed",
+        "title": "DevOps: reset component to stable build",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Thu, 03 May 2018 12:39:00 GMT",
+        "id": 319902972,
+        "number": 102,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "we dont use travis-ci at this moment",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Thu, 03 May 2018 12:32:06 GMT",
+        "id": 319900739,
+        "number": 101,
+        "repository": "user-api",
+        "state": "open",
+        "title": "[WIP] added basic prometheus metric exporter",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Wed, 02 May 2018 09:18:53 GMT",
+        "id": 319475426,
+        "number": 7,
+        "repository": "notebooks",
+        "state": "closed",
+        "title": "renamed, and put some new queries in here, updated to use the current schema",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Wed, 02 May 2018 09:09:33 GMT",
+        "id": 319472293,
+        "number": 63,
+        "repository": "core",
+        "state": "closed",
+        "title": "added notebook as a component",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Tue, 01 May 2018 08:36:14 GMT",
+        "id": 319146165,
+        "number": 6,
+        "repository": "naming-service",
+        "state": "closed",
+        "title": "Basic Prometheus Metrics",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Mon, 30 Apr 2018 09:00:56 GMT",
+        "id": 318824656,
+        "number": 109,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "updated thoth-storage, and other dependencies",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Sun, 29 Apr 2018 21:35:58 GMT",
+        "id": 318752161,
+        "number": 100,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Do not restrict image names on API",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Sun, 29 Apr 2018 21:23:49 GMT",
+        "id": 318751317,
+        "number": 15,
+        "repository": "package-extract",
+        "state": "closed",
+        "title": "OpenShift S2I build",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Sun, 29 Apr 2018 16:35:24 GMT",
+        "id": 318730705,
+        "number": 62,
+        "repository": "core",
+        "state": "closed",
+        "title": "bounced version, a little less verbose output, more labels",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Sun, 29 Apr 2018 10:25:59 GMT",
+        "id": 318706099,
+        "number": 5,
+        "repository": "notebooks",
+        "state": "closed",
+        "title": "there was another prefix",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Sun, 29 Apr 2018 09:54:31 GMT",
+        "id": 318704389,
+        "number": 60,
+        "repository": "core",
+        "state": "closed",
+        "title": "added component labels",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Sun, 29 Apr 2018 09:38:30 GMT",
+        "id": 318703525,
+        "number": 4,
+        "repository": "notebooks",
+        "state": "closed",
+        "title": "removed some 'thoth-' prefixes",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Sun, 29 Apr 2018 09:35:13 GMT",
+        "id": 318703336,
+        "number": 14,
+        "repository": "package-extract",
+        "state": "closed",
+        "title": "updated .gitignore and set the trove category to the right copyright",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Sat, 28 Apr 2018 11:04:42 GMT",
+        "id": 318626489,
+        "number": 5,
+        "repository": "naming-service",
+        "state": "open",
+        "title": "query OAPI for data",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Sat, 28 Apr 2018 10:26:49 GMT",
+        "id": 318623592,
+        "number": 59,
+        "repository": "core",
+        "state": "closed",
+        "title": "added 1/3 of the Naming Service feature",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Sat, 28 Apr 2018 09:54:08 GMT",
+        "id": 318621047,
+        "number": 4,
+        "repository": "naming-service",
+        "state": "closed",
+        "title": "now with solver images!",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Sat, 28 Apr 2018 09:35:40 GMT",
+        "id": 318619381,
+        "number": 3,
+        "repository": "naming-service",
+        "state": "closed",
+        "title": "added solver images",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Fri, 27 Apr 2018 13:15:30 GMT",
+        "id": 318405327,
+        "number": 20,
+        "repository": "storages",
+        "state": "closed",
+        "title": "Skip mercator errors that are not stored anyway",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Fri, 27 Apr 2018 12:44:35 GMT",
+        "id": 318395904,
+        "number": 2,
+        "repository": "misc",
+        "state": "closed",
+        "title": "added Pipfile so that all dependencies could be installed easy",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Fri, 27 Apr 2018 12:34:16 GMT",
+        "id": 318392815,
+        "number": 20,
+        "repository": "solver",
+        "state": "closed",
+        "title": "added OpenShift templates",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Fri, 27 Apr 2018 12:17:53 GMT",
+        "id": 318388156,
+        "number": 58,
+        "repository": "core",
+        "state": "closed",
+        "title": "added a role to import required imagestreams",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Fri, 27 Apr 2018 11:22:42 GMT",
+        "id": 318372690,
+        "number": 19,
+        "repository": "storages",
+        "state": "closed",
+        "title": "Introduce adapter for adviser for recommendations",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Fri, 27 Apr 2018 11:18:20 GMT",
+        "id": 318371464,
+        "number": 23,
+        "repository": "graph-refresh-job",
+        "state": "closed",
+        "title": "Increase duration of solver so it does not get killed too soon",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Fri, 27 Apr 2018 10:33:20 GMT",
+        "id": 318359464,
+        "number": 98,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Remove the /run endpoint",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Fri, 27 Apr 2018 10:17:47 GMT",
+        "id": 318354876,
+        "number": 19,
+        "repository": "solver",
+        "state": "closed",
+        "title": "Keep track of unparsed packages",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Fri, 27 Apr 2018 10:14:58 GMT",
+        "id": 318354066,
+        "number": 18,
+        "repository": "solver",
+        "state": "closed",
+        "title": "Simplify error handling",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Fri, 27 Apr 2018 10:02:43 GMT",
+        "id": 318350392,
+        "number": 56,
+        "repository": "core",
+        "state": "closed",
+        "title": "adding the misc repository",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Fri, 27 Apr 2018 10:01:58 GMT",
+        "id": 318350153,
+        "number": 21,
+        "repository": "graph-refresh-job",
+        "state": "closed",
+        "title": "Improve logging",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Fri, 27 Apr 2018 08:57:28 GMT",
+        "id": 318329547,
+        "number": 17,
+        "repository": "solver",
+        "state": "closed",
+        "title": "Mark packages that couldn't be found as unresolvable",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 26 Apr 2018 12:13:32 GMT",
+        "id": 318002028,
+        "number": 15,
+        "repository": "solver",
+        "state": "closed",
+        "title": "Mark packages that couldn't be found as unresolvable",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 26 Apr 2018 10:32:49 GMT",
+        "id": 317970083,
+        "number": 20,
+        "repository": "graph-refresh-job",
+        "state": "closed",
+        "title": "Fix solver packages from graph-refresh job",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 26 Apr 2018 09:41:47 GMT",
+        "id": 317952279,
+        "number": 10,
+        "repository": "graph-sync-job",
+        "state": "closed",
+        "title": "Fix slow ingestion - optimize syncs if the given document was already synced",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 26 Apr 2018 09:22:18 GMT",
+        "id": 317945241,
+        "number": 13,
+        "repository": "package-extract",
+        "state": "closed",
+        "title": "Fix RPM name parsing",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 26 Apr 2018 08:31:15 GMT",
+        "id": 317927483,
+        "number": 97,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Fix wrong argument for pagination",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 26 Apr 2018 08:30:54 GMT",
+        "id": 317927344,
+        "number": 96,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Endpoint for listing analyses of runtime environments",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 26 Apr 2018 07:03:05 GMT",
+        "id": 317901760,
+        "number": 16,
+        "repository": "storages",
+        "state": "closed",
+        "title": "Runtime environment analyses listing",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 25 Apr 2018 20:48:11 GMT",
+        "id": 317788135,
+        "number": 19,
+        "repository": "graph-refresh-job",
+        "state": "closed",
+        "title": "Omit non-int division check",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 25 Apr 2018 18:30:39 GMT",
+        "id": 317743870,
+        "number": 18,
+        "repository": "graph-refresh-job",
+        "state": "closed",
+        "title": "added git commit hash to version output",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Wed, 25 Apr 2018 15:50:57 GMT",
+        "id": 317688808,
+        "number": 14,
+        "repository": "graph-refresh-job",
+        "state": "closed",
+        "title": "added KUBERNETES_ to the ENV",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Wed, 25 Apr 2018 15:08:25 GMT",
+        "id": 317671231,
+        "number": 15,
+        "repository": "storages",
+        "state": "closed",
+        "title": "Analysis metadata",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 25 Apr 2018 14:52:32 GMT",
+        "id": 317664198,
+        "number": 13,
+        "repository": "graph-refresh-job",
+        "state": "closed",
+        "title": "using MIDDLETIER now all over the place",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Wed, 25 Apr 2018 14:35:07 GMT",
+        "id": 317656529,
+        "number": 14,
+        "repository": "storages",
+        "state": "closed",
+        "title": "Fix runtime environment",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 25 Apr 2018 13:31:44 GMT",
+        "id": 317629493,
+        "number": 9,
+        "repository": "graph-sync-job",
+        "state": "closed",
+        "title": "Update thoth-storages to respect schema",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 25 Apr 2018 13:23:50 GMT",
+        "id": 317626508,
+        "number": 94,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Fix graph sync endpoint",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 25 Apr 2018 12:14:31 GMT",
+        "id": 317601774,
+        "number": 13,
+        "repository": "storages",
+        "state": "closed",
+        "title": "Create a method for gathering runtime environment packages",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 25 Apr 2018 11:36:09 GMT",
+        "id": 317589601,
+        "number": 92,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "List runtime environments endpoint",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 25 Apr 2018 11:26:27 GMT",
+        "id": 317586575,
+        "number": 12,
+        "repository": "storages",
+        "state": "closed",
+        "title": "Introduce runtime environment listing method",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 25 Apr 2018 10:26:22 GMT",
+        "id": 317567926,
+        "number": 52,
+        "repository": "core",
+        "state": "closed",
+        "title": "maintaining the bots...",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Tue, 24 Apr 2018 20:02:17 GMT",
+        "id": 317374196,
+        "number": 2,
+        "repository": "naming-service",
+        "state": "closed",
+        "title": "added the buildconfig, so it can be used by Jenkinsfile",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Tue, 24 Apr 2018 19:51:58 GMT",
+        "id": 317370780,
+        "number": 16,
+        "repository": "result-api",
+        "state": "closed",
+        "title": "Remove unused volume/ dir",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Tue, 24 Apr 2018 19:46:17 GMT",
+        "id": 317369069,
+        "number": 91,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "License and license headers",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Tue, 24 Apr 2018 19:43:00 GMT",
+        "id": 317368119,
+        "number": 11,
+        "repository": "storages",
+        "state": "closed",
+        "title": "License and license headers",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Tue, 24 Apr 2018 19:39:30 GMT",
+        "id": 317367005,
+        "number": 11,
+        "repository": "solver",
+        "state": "closed",
+        "title": "License and license headers",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Tue, 24 Apr 2018 19:36:16 GMT",
+        "id": 317365996,
+        "number": 14,
+        "repository": "result-api",
+        "state": "closed",
+        "title": "License and license header",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Tue, 24 Apr 2018 19:33:02 GMT",
+        "id": 317364959,
+        "number": 11,
+        "repository": "package-releases-job",
+        "state": "closed",
+        "title": "License and license header",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Tue, 24 Apr 2018 19:30:34 GMT",
+        "id": 317364153,
+        "number": 12,
+        "repository": "package-extract",
+        "state": "closed",
+        "title": "License and license headers",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Tue, 24 Apr 2018 19:24:01 GMT",
+        "id": 317362072,
+        "number": 8,
+        "repository": "graph-sync-job",
+        "state": "closed",
+        "title": "License and license header",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Tue, 24 Apr 2018 19:21:54 GMT",
+        "id": 317361342,
+        "number": 12,
+        "repository": "graph-refresh-job",
+        "state": "closed",
+        "title": "License and license headers",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Tue, 24 Apr 2018 19:13:58 GMT",
+        "id": 317358908,
+        "number": 51,
+        "repository": "core",
+        "state": "closed",
+        "title": "added two more repos",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Tue, 24 Apr 2018 19:07:23 GMT",
+        "id": 317356814,
+        "number": 11,
+        "repository": "cleanup-job",
+        "state": "closed",
+        "title": "License and license headers",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Tue, 24 Apr 2018 19:03:47 GMT",
+        "id": 317355592,
+        "number": 3,
+        "repository": "analyzer",
+        "state": "closed",
+        "title": "License",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Tue, 24 Apr 2018 18:40:54 GMT",
+        "id": 317347913,
+        "number": 2,
+        "repository": "lab",
+        "state": "closed",
+        "title": "License and license headers",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Tue, 24 Apr 2018 18:11:30 GMT",
+        "id": 317337835,
+        "number": 10,
+        "repository": "package-extract",
+        "state": "closed",
+        "title": "Capture layer hashes in the output",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Tue, 24 Apr 2018 09:50:10 GMT",
+        "id": 317151381,
+        "number": 90,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Use path parameters instead of query where appropriate",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Tue, 24 Apr 2018 08:26:14 GMT",
+        "id": 317120548,
+        "number": 10,
+        "repository": "graph-refresh-job",
+        "state": "closed",
+        "title": "Make cronjob runnable again",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Tue, 24 Apr 2018 07:04:47 GMT",
+        "id": 317095624,
+        "number": 10,
+        "repository": "cleanup-job",
+        "state": "closed",
+        "title": "Use a separator in URL only once",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Tue, 24 Apr 2018 07:02:26 GMT",
+        "id": 317095056,
+        "number": 9,
+        "repository": "cleanup-job",
+        "state": "closed",
+        "title": "Expand namespace from configmap",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Mon, 23 Apr 2018 15:57:01 GMT",
+        "id": 316875980,
+        "number": 13,
+        "repository": "result-api",
+        "state": "closed",
+        "title": "Remove thoth- prefix",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Mon, 23 Apr 2018 15:53:14 GMT",
+        "id": 316874333,
+        "number": 89,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Remove thoth- prefix",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Mon, 23 Apr 2018 15:52:40 GMT",
+        "id": 316874084,
+        "number": 47,
+        "repository": "core",
+        "state": "closed",
+        "title": "Remove thoth- prefix",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Mon, 23 Apr 2018 15:44:01 GMT",
+        "id": 316870473,
+        "number": 46,
+        "repository": "core",
+        "state": "closed",
+        "title": "Make deployment more generic",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Mon, 23 Apr 2018 15:42:26 GMT",
+        "id": 316869813,
+        "number": 45,
+        "repository": "core",
+        "state": "closed",
+        "title": "[WIP] integrating Behave with Jenkinsfile",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Mon, 23 Apr 2018 15:34:46 GMT",
+        "id": 316866620,
+        "number": 44,
+        "repository": "core",
+        "state": "closed",
+        "title": "added based on a conversation on mattermost",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Mon, 23 Apr 2018 15:31:55 GMT",
+        "id": 316865471,
+        "number": 43,
+        "repository": "core",
+        "state": "closed",
+        "title": "Fix deployment",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Mon, 23 Apr 2018 14:13:00 GMT",
+        "id": 316830985,
+        "number": 42,
+        "repository": "core",
+        "state": "closed",
+        "title": "a little consolidation",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Mon, 23 Apr 2018 12:57:35 GMT",
+        "id": 316800731,
+        "number": 10,
+        "repository": "package-releases-job",
+        "state": "closed",
+        "title": "adding the OWNERS file",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Mon, 23 Apr 2018 12:31:42 GMT",
+        "id": 316791568,
+        "number": 9,
+        "repository": "package-releases-job",
+        "state": "closed",
+        "title": "Separate imagestreams",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Mon, 23 Apr 2018 10:50:53 GMT",
+        "id": 316759408,
+        "number": 8,
+        "repository": "cleanup-job",
+        "state": "closed",
+        "title": "Separate imagestreams",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Mon, 23 Apr 2018 10:31:10 GMT",
+        "id": 316753260,
+        "number": 40,
+        "repository": "core",
+        "state": "closed",
+        "title": "Feature: End-to-End Tests",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Mon, 23 Apr 2018 10:13:21 GMT",
+        "id": 316747394,
+        "number": 8,
+        "repository": "graph-refresh-job",
+        "state": "closed",
+        "title": "Separate imagestreams",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Mon, 23 Apr 2018 09:56:55 GMT",
+        "id": 316741842,
+        "number": 39,
+        "repository": "core",
+        "state": "closed",
+        "title": "Remove cronjobs from core template",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Mon, 23 Apr 2018 09:52:14 GMT",
+        "id": 316740174,
+        "number": 7,
+        "repository": "cleanup-job",
+        "state": "closed",
+        "title": "Add cronjob template",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Mon, 23 Apr 2018 09:41:34 GMT",
+        "id": 316736400,
+        "number": 7,
+        "repository": "graph-sync-job",
+        "state": "closed",
+        "title": "Add cronjob template",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Mon, 23 Apr 2018 08:51:29 GMT",
+        "id": 316718688,
+        "number": 7,
+        "repository": "graph-refresh-job",
+        "state": "closed",
+        "title": "Remove cronjob template, moved to core",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Mon, 23 Apr 2018 08:50:29 GMT",
+        "id": 316718340,
+        "number": 9,
+        "repository": "solver",
+        "state": "closed",
+        "title": "adding the OWNERS file",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Mon, 23 Apr 2018 08:42:10 GMT",
+        "id": 316715575,
+        "number": 35,
+        "repository": "core",
+        "state": "closed",
+        "title": "Add graph refresh cronjob",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Mon, 23 Apr 2018 08:27:17 GMT",
+        "id": 316710695,
+        "number": 34,
+        "repository": "core",
+        "state": "closed",
+        "title": "Cleanup job needs middletier namespace env variable",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Mon, 23 Apr 2018 08:20:35 GMT",
+        "id": 316708238,
+        "number": 6,
+        "repository": "cleanup-job",
+        "state": "closed",
+        "title": "adding the OWNERS file",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Mon, 23 Apr 2018 08:18:29 GMT",
+        "id": 316707462,
+        "number": 11,
+        "repository": "result-api",
+        "state": "closed",
+        "title": "adding the OWNERS file",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Mon, 23 Apr 2018 08:16:28 GMT",
+        "id": 316706772,
+        "number": 6,
+        "repository": "graph-sync-job",
+        "state": "closed",
+        "title": "adding the OWNERS file",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Mon, 23 Apr 2018 08:13:59 GMT",
+        "id": 316706026,
+        "number": 6,
+        "repository": "graph-refresh-job",
+        "state": "closed",
+        "title": "adding the OWNERS file",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Mon, 23 Apr 2018 08:11:02 GMT",
+        "id": 316705126,
+        "number": 5,
+        "repository": "graph-refresh-job",
+        "state": "closed",
+        "title": "Adding owners",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Mon, 23 Apr 2018 08:09:48 GMT",
+        "id": 316704784,
+        "number": 88,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "adding the OWNERS file",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Mon, 23 Apr 2018 07:52:22 GMT",
+        "id": 316699728,
+        "number": 5,
+        "repository": "graph-sync-job",
+        "state": "closed",
+        "title": "Make analysis results host configurable",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Mon, 23 Apr 2018 07:48:42 GMT",
+        "id": 316698736,
+        "number": 4,
+        "repository": "graph-sync-job",
+        "state": "closed",
+        "title": "Fix URL to repository and description",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Mon, 23 Apr 2018 07:14:07 GMT",
+        "id": 316689125,
+        "number": 33,
+        "repository": "core",
+        "state": "closed",
+        "title": "Validate yaml fixes",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Mon, 23 Apr 2018 07:08:36 GMT",
+        "id": 316687718,
+        "number": 31,
+        "repository": "core",
+        "state": "closed",
+        "title": "Create result API build config",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Sat, 21 Apr 2018 16:11:21 GMT",
+        "id": 316504151,
+        "number": 30,
+        "repository": "core",
+        "state": "closed",
+        "title": "Feature/bots webhooks",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Fri, 20 Apr 2018 14:18:32 GMT",
+        "id": 316286430,
+        "number": 29,
+        "repository": "core",
+        "state": "closed",
+        "title": "This is the Cyborg Team Members",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Fri, 20 Apr 2018 14:12:31 GMT",
+        "id": 316284236,
+        "number": 10,
+        "repository": "result-api",
+        "state": "closed",
+        "title": "Remove not relevant sentense from README",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Fri, 20 Apr 2018 14:08:23 GMT",
+        "id": 316282776,
+        "number": 9,
+        "repository": "result-api",
+        "state": "closed",
+        "title": "Do not use Travis CI",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Fri, 20 Apr 2018 14:01:56 GMT",
+        "id": 316280271,
+        "number": 8,
+        "repository": "result-api",
+        "state": "closed",
+        "title": "Specify namespace parameter otherwise ansible fails",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Fri, 20 Apr 2018 13:50:25 GMT",
+        "id": 316276020,
+        "number": 7,
+        "repository": "result-api",
+        "state": "closed",
+        "title": "Cleanup",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Fri, 20 Apr 2018 12:43:35 GMT",
+        "id": 316252682,
+        "number": 5,
+        "repository": "cleanup-job",
+        "state": "closed",
+        "title": "Fix image name",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Fri, 20 Apr 2018 12:36:52 GMT",
+        "id": 316250549,
+        "number": 4,
+        "repository": "cleanup-job",
+        "state": "closed",
+        "title": "Remove old dockerfile files",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Fri, 20 Apr 2018 11:53:06 GMT",
+        "id": 316237628,
+        "number": 4,
+        "repository": "graph-refresh-job",
+        "state": "closed",
+        "title": "adding Jenkins buildpipeline",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Fri, 20 Apr 2018 11:41:25 GMT",
+        "id": 316234496,
+        "number": 3,
+        "repository": "graph-refresh-job",
+        "state": "closed",
+        "title": "Fix image name to pull correct image",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Fri, 20 Apr 2018 11:31:32 GMT",
+        "id": 316231859,
+        "number": 2,
+        "repository": "graph-refresh-job",
+        "state": "closed",
+        "title": "Propagate arguments for s2i",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Fri, 20 Apr 2018 08:58:46 GMT",
+        "id": 316184889,
+        "number": 10,
+        "repository": "storages",
+        "state": "closed",
+        "title": "Introduce a method for retrieving dependent packages",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Fri, 20 Apr 2018 08:57:56 GMT",
+        "id": 316184607,
+        "number": 20,
+        "repository": "dependency-monkey",
+        "state": "closed",
+        "title": " humans: let's reclaim our mattermost channel",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Fri, 20 Apr 2018 08:55:33 GMT",
+        "id": 316183744,
+        "number": 6,
+        "repository": "result-api",
+        "state": "closed",
+        "title": "humans: let's reclaim our mattermost channel",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Fri, 20 Apr 2018 08:54:57 GMT",
+        "id": 316183530,
+        "number": 87,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "humans: let's reclaim our mattermost channel",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Fri, 20 Apr 2018 08:47:49 GMT",
+        "id": 316181027,
+        "number": 8,
+        "repository": "package-releases-job",
+        "state": "closed",
+        "title": "humans: let's reclaim our mattermost channel",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Fri, 20 Apr 2018 06:57:06 GMT",
+        "id": 316149422,
+        "number": 7,
+        "repository": "package-releases-job",
+        "state": "closed",
+        "title": "Fix wrong report message",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Fri, 20 Apr 2018 05:55:25 GMT",
+        "id": 316137050,
+        "number": 9,
+        "repository": "storages",
+        "state": "closed",
+        "title": "Provide a way to pass bucket prefix explicitly in constructor",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Fri, 20 Apr 2018 05:52:19 GMT",
+        "id": 316136488,
+        "number": 86,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Add missing argument for transitive dependencies scan",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 19 Apr 2018 13:31:13 GMT",
+        "id": 315879008,
+        "number": 27,
+        "repository": "core",
+        "state": "closed",
+        "title": "separated out all the tiers",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Thu, 19 Apr 2018 13:20:05 GMT",
+        "id": 315874599,
+        "number": 5,
+        "repository": "result-api",
+        "state": "closed",
+        "title": "no s2i no namespace",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Thu, 19 Apr 2018 12:22:26 GMT",
+        "id": 315853214,
+        "number": 26,
+        "repository": "core",
+        "state": "closed",
+        "title": "added docker.io as fallback for centos",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Thu, 19 Apr 2018 11:56:57 GMT",
+        "id": 315845279,
+        "number": 25,
+        "repository": "core",
+        "state": "closed",
+        "title": "Issue/6",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Thu, 19 Apr 2018 11:56:14 GMT",
+        "id": 315845054,
+        "number": 85,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Provide an option to disable TLS cert verification in analyzer",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 19 Apr 2018 11:53:20 GMT",
+        "id": 315844179,
+        "number": 84,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "adding version string to /readiness and /liveness",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Thu, 19 Apr 2018 11:50:40 GMT",
+        "id": 315843290,
+        "number": 9,
+        "repository": "package-extract",
+        "state": "closed",
+        "title": "Introduce --no-tls-verify flag",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 19 Apr 2018 11:36:40 GMT",
+        "id": 315839056,
+        "number": 7,
+        "repository": "solver",
+        "state": "closed",
+        "title": "Use Thoth's common logging",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 19 Apr 2018 11:32:23 GMT",
+        "id": 315837761,
+        "number": 9,
+        "repository": "adviser",
+        "state": "closed",
+        "title": "Use thoth's common logging",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 19 Apr 2018 11:26:16 GMT",
+        "id": 315835912,
+        "number": 83,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Return 404 if the given document was not found",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 19 Apr 2018 10:26:37 GMT",
+        "id": 315817843,
+        "number": 24,
+        "repository": "core",
+        "state": "closed",
+        "title": "adding the bot cohort",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Thu, 19 Apr 2018 10:03:47 GMT",
+        "id": 315810116,
+        "number": 2,
+        "repository": "thoth",
+        "state": "closed",
+        "title": "Move docs to appropriate repo",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 19 Apr 2018 09:46:44 GMT",
+        "id": 315804165,
+        "number": 82,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "one imagestream declaration, moved s2i config",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Thu, 19 Apr 2018 08:58:32 GMT",
+        "id": 315785957,
+        "number": 81,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Remove dependencies.yaml",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 19 Apr 2018 08:47:23 GMT",
+        "id": 315781821,
+        "number": 80,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Introduce force sync options",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 19 Apr 2018 08:17:56 GMT",
+        "id": 315772229,
+        "number": 79,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Place /sync endpoint to admin section",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 18 Apr 2018 13:17:51 GMT",
+        "id": 315475467,
+        "number": 21,
+        "repository": "core",
+        "state": "closed",
+        "title": "placing the pieces in the right spaces",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Wed, 18 Apr 2018 11:54:16 GMT",
+        "id": 315447846,
+        "number": 20,
+        "repository": "core",
+        "state": "closed",
+        "title": "adding package releases related items to playbooks",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Wed, 18 Apr 2018 11:28:24 GMT",
+        "id": 315440321,
+        "number": 6,
+        "repository": "package-releases-job",
+        "state": "closed",
+        "title": "fixed name of the BC",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Wed, 18 Apr 2018 11:08:04 GMT",
+        "id": 315434366,
+        "number": 5,
+        "repository": "package-releases-job",
+        "state": "closed",
+        "title": "removed the namespace relationship completely",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Wed, 18 Apr 2018 10:14:38 GMT",
+        "id": 315417499,
+        "number": 4,
+        "repository": "package-releases-job",
+        "state": "closed",
+        "title": "build pipeline",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Wed, 18 Apr 2018 10:00:28 GMT",
+        "id": 315412537,
+        "number": 3,
+        "repository": "package-releases-job",
+        "state": "closed",
+        "title": "added OpenShift templates for CronJob, ImageStream and BuildConfig",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Tue, 17 Apr 2018 16:08:08 GMT",
+        "id": 315130058,
+        "number": 1,
+        "repository": "graph-refresh-job",
+        "state": "closed",
+        "title": "Initial implementation",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Tue, 17 Apr 2018 15:44:00 GMT",
+        "id": 315120248,
+        "number": 19,
+        "repository": "core",
+        "state": "closed",
+        "title": "moving more parts from core to user-api",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Tue, 17 Apr 2018 15:43:04 GMT",
+        "id": 315119086,
+        "number": 78,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "moving more parts from core to user-api",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Tue, 17 Apr 2018 14:44:49 GMT",
+        "id": 315094111,
+        "number": 18,
+        "repository": "core",
+        "state": "closed",
+        "title": "synchronizing to incorporate https://github.com/thoth-station/result-api/pull/1",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Tue, 17 Apr 2018 12:42:03 GMT",
+        "id": 315041924,
+        "number": 76,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "using same tag...",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Tue, 17 Apr 2018 12:05:47 GMT",
+        "id": 315029708,
+        "number": 16,
+        "repository": "core",
+        "state": "closed",
+        "title": "Remove unused env variable",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Tue, 17 Apr 2018 12:05:23 GMT",
+        "id": 315029592,
+        "number": 75,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Service name has changed",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Tue, 17 Apr 2018 12:02:43 GMT",
+        "id": 315028791,
+        "number": 74,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Unify output handling",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Tue, 17 Apr 2018 12:00:17 GMT",
+        "id": 315028074,
+        "number": 15,
+        "repository": "core",
+        "state": "closed",
+        "title": "The result-api service has been renamed",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Tue, 17 Apr 2018 11:50:35 GMT",
+        "id": 315024981,
+        "number": 14,
+        "repository": "core",
+        "state": "closed",
+        "title": "fixing typos",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Tue, 17 Apr 2018 09:56:23 GMT",
+        "id": 314987984,
+        "number": 73,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "centos7 based build",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Tue, 17 Apr 2018 06:14:17 GMT",
+        "id": 314919143,
+        "number": 2,
+        "repository": "package-releases-job",
+        "state": "closed",
+        "title": "Introduce only if packages seen flag",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Tue, 17 Apr 2018 06:06:12 GMT",
+        "id": 314917503,
+        "number": 8,
+        "repository": "storages",
+        "state": "closed",
+        "title": "Introduce logic that wraps PyPI package creation",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Mon, 16 Apr 2018 18:15:22 GMT",
+        "id": 314763913,
+        "number": 12,
+        "repository": "core",
+        "state": "closed",
+        "title": "Fix wrong directory name in README",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Mon, 16 Apr 2018 07:54:32 GMT",
+        "id": 314537898,
+        "number": 6,
+        "repository": "solver",
+        "state": "open",
+        "title": "WIP: Use sequence instead of raw strings",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Mon, 16 Apr 2018 07:48:41 GMT",
+        "id": 314536258,
+        "number": 10,
+        "repository": "core",
+        "state": "closed",
+        "title": "Some more cleanups for the CI/CD pipeline",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Mon, 16 Apr 2018 07:45:42 GMT",
+        "id": 314535429,
+        "number": 8,
+        "repository": "package-extract",
+        "state": "open",
+        "title": "WIP: Use a sequence instead of raw string",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Mon, 16 Apr 2018 07:05:09 GMT",
+        "id": 314524919,
+        "number": 72,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Do not update pip to latest for now",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Mon, 16 Apr 2018 06:29:13 GMT",
+        "id": 314517109,
+        "number": 4,
+        "repository": "result-api",
+        "state": "closed",
+        "title": "Do not update pip to latest for now",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Sun, 15 Apr 2018 20:13:17 GMT",
+        "id": 314447725,
+        "number": 3,
+        "repository": "cleanup-job",
+        "state": "closed",
+        "title": "Respect transition to a new org",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Sun, 15 Apr 2018 19:30:41 GMT",
+        "id": 314444260,
+        "number": 9,
+        "repository": "core",
+        "state": "closed",
+        "title": "Respect transition to a new org",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Sun, 15 Apr 2018 19:27:28 GMT",
+        "id": 314443989,
+        "number": 6,
+        "repository": "storages",
+        "state": "closed",
+        "title": "Add missing attributes during sync",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Sun, 15 Apr 2018 19:23:26 GMT",
+        "id": 314443687,
+        "number": 5,
+        "repository": "solver",
+        "state": "closed",
+        "title": "Respect transition to a new org",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Sun, 15 Apr 2018 19:18:59 GMT",
+        "id": 314443332,
+        "number": 3,
+        "repository": "notebooks",
+        "state": "closed",
+        "title": "Respect transition to a new org",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Sun, 15 Apr 2018 19:15:59 GMT",
+        "id": 314443109,
+        "number": 108,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Respect transition to a new org",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Sun, 15 Apr 2018 19:14:14 GMT",
+        "id": 314442976,
+        "number": 71,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Respect transition to a new org",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Sun, 15 Apr 2018 19:12:16 GMT",
+        "id": 314442815,
+        "number": 3,
+        "repository": "result-api",
+        "state": "closed",
+        "title": "Respect transition to a new org",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Sun, 15 Apr 2018 19:10:18 GMT",
+        "id": 314442666,
+        "number": 7,
+        "repository": "package-extract",
+        "state": "closed",
+        "title": "Respect transition to a custom org",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Sat, 14 Apr 2018 07:44:39 GMT",
+        "id": 314308421,
+        "number": 1,
+        "repository": "thoth",
+        "state": "closed",
+        "title": "Change organization",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Fri, 13 Apr 2018 08:21:21 GMT",
+        "id": 314012326,
+        "number": 3,
+        "repository": "graph-sync-job",
+        "state": "closed",
+        "title": "added an OpenShift BuildConfig and cleaned up the Dockerfile...",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Thu, 12 Apr 2018 16:07:28 GMT",
+        "id": 313793251,
+        "number": 107,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update holoviews in requirements.txt from 1.9.5 to 1.10.0",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 12 Apr 2018 10:47:50 GMT",
+        "id": 313673436,
+        "number": 19,
+        "repository": "dependency-monkey",
+        "state": "open",
+        "title": "[WIP] add some code coverage reporting",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Thu, 12 Apr 2018 09:19:01 GMT",
+        "id": 313642801,
+        "number": 8,
+        "repository": "core",
+        "state": "closed",
+        "title": "fixing some cleanup job template stuff",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Thu, 12 Apr 2018 09:18:11 GMT",
+        "id": 313642530,
+        "number": 2,
+        "repository": "cleanup-job",
+        "state": "closed",
+        "title": "adding OpenShift buildConfig template",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Wed, 11 Apr 2018 16:10:23 GMT",
+        "id": 313392299,
+        "number": 106,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update botocore in requirements.txt from 1.9.11 to 1.10.4",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Wed, 11 Apr 2018 16:10:18 GMT",
+        "id": 313392264,
+        "number": 105,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update boto3 in requirements.txt from 1.6.11 to 1.7.4",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Wed, 11 Apr 2018 12:28:28 GMT",
+        "id": 313302001,
+        "number": 70,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Provide a way to specify registry user and registry password",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 11 Apr 2018 12:10:06 GMT",
+        "id": 313295979,
+        "number": 5,
+        "repository": "package-extract",
+        "state": "closed",
+        "title": "Use credentials to communicate with registry if needed",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 11 Apr 2018 10:47:05 GMT",
+        "id": 313270520,
+        "number": 4,
+        "repository": "package-extract",
+        "state": "closed",
+        "title": "Quote user input",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 11 Apr 2018 08:59:42 GMT",
+        "id": 313232543,
+        "number": 69,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Remove setup.py, we use s2i",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 11 Apr 2018 06:59:05 GMT",
+        "id": 313195966,
+        "number": 1,
+        "repository": "result-api",
+        "state": "closed",
+        "title": "Feature/build pipeline",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Tue, 10 Apr 2018 16:11:59 GMT",
+        "id": 312992893,
+        "number": 3,
+        "repository": "storages",
+        "state": "closed",
+        "title": "Use common datetime parsing handling",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Tue, 10 Apr 2018 16:09:57 GMT",
+        "id": 312992186,
+        "number": 104,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update pytz in requirements.txt from 2018.3 to 2018.4",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Tue, 10 Apr 2018 16:09:53 GMT",
+        "id": 312992168,
+        "number": 103,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update botocore in requirements.txt from 1.9.11 to 1.10.3",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Tue, 10 Apr 2018 16:09:49 GMT",
+        "id": 312992147,
+        "number": 102,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update boto3 in requirements.txt from 1.6.11 to 1.7.3",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Mon, 09 Apr 2018 16:09:39 GMT",
+        "id": 312592999,
+        "number": 68,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update gremlinpython in requirements.txt from 3.2.6 to 3.3.2",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Mon, 09 Apr 2018 16:09:38 GMT",
+        "id": 312592991,
+        "number": 101,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update gremlinpython in requirements.txt from 3.2.6 to 3.3.2",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sun, 08 Apr 2018 16:10:00 GMT",
+        "id": 312317768,
+        "number": 100,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update tornado in requirements.txt from 4.4.1 to 5.0.2",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sun, 08 Apr 2018 16:08:38 GMT",
+        "id": 312317659,
+        "number": 67,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update tornado in requirements.txt from 4.4.1 to 5.0.2",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sat, 07 Apr 2018 16:09:11 GMT",
+        "id": 312219988,
+        "number": 99,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update botocore in requirements.txt from 1.9.11 to 1.10.2",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sat, 07 Apr 2018 16:09:06 GMT",
+        "id": 312219984,
+        "number": 98,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update boto3 in requirements.txt from 1.6.11 to 1.7.2",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sat, 07 Apr 2018 16:08:49 GMT",
+        "id": 312219961,
+        "number": 66,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update botocore in requirements.txt from 1.9.19 to 1.10.2",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sat, 07 Apr 2018 16:08:45 GMT",
+        "id": 312219956,
+        "number": 65,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update boto3 in requirements.txt from 1.6.19 to 1.7.2",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Fri, 06 Apr 2018 16:10:09 GMT",
+        "id": 312033494,
+        "number": 97,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update ipython in requirements.txt from 6.2.1 to 6.3.1",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Fri, 06 Apr 2018 16:10:00 GMT",
+        "id": 312033426,
+        "number": 96,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update botocore in requirements.txt from 1.9.11 to 1.10.1",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Fri, 06 Apr 2018 16:10:00 GMT",
+        "id": 312033427,
+        "number": 64,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update botocore in requirements.txt from 1.9.19 to 1.10.1",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Fri, 06 Apr 2018 16:09:56 GMT",
+        "id": 312033408,
+        "number": 95,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update boto3 in requirements.txt from 1.6.11 to 1.7.1",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Fri, 06 Apr 2018 16:09:56 GMT",
+        "id": 312033409,
+        "number": 63,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update boto3 in requirements.txt from 1.6.19 to 1.7.1",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Fri, 06 Apr 2018 16:09:53 GMT",
+        "id": 312033393,
+        "number": 62,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update aiohttp in requirements.txt from 2.2.5 to 3.1.2",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Fri, 06 Apr 2018 16:09:52 GMT",
+        "id": 312033391,
+        "number": 94,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update aiohttp in requirements.txt from 2.2.5 to 3.1.2",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Fri, 06 Apr 2018 07:15:30 GMT",
+        "id": 311869850,
+        "number": 6,
+        "repository": "core",
+        "state": "closed",
+        "title": "Respect logging configuration in env variables",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 05 Apr 2018 16:10:23 GMT",
+        "id": 311675402,
+        "number": 93,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update param in requirements.txt from 1.5.1 to 1.6.0",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 05 Apr 2018 16:10:18 GMT",
+        "id": 311675374,
+        "number": 92,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update botocore in requirements.txt from 1.9.11 to 1.10.0",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 05 Apr 2018 16:10:10 GMT",
+        "id": 311675312,
+        "number": 91,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update boto3 in requirements.txt from 1.6.11 to 1.7.0",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 05 Apr 2018 16:09:24 GMT",
+        "id": 311674999,
+        "number": 61,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update botocore in requirements.txt from 1.9.19 to 1.10.0",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 05 Apr 2018 16:09:21 GMT",
+        "id": 311674974,
+        "number": 60,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update boto3 in requirements.txt from 1.6.19 to 1.7.0",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Wed, 04 Apr 2018 16:11:43 GMT",
+        "id": 311296515,
+        "number": 59,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update thoth-common in requirements.txt from 0.0.1 to 0.0.3",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Wed, 04 Apr 2018 16:11:40 GMT",
+        "id": 311296479,
+        "number": 58,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update botocore in requirements.txt from 1.9.19 to 1.9.23",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Wed, 04 Apr 2018 16:11:35 GMT",
+        "id": 311296454,
+        "number": 57,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update boto3 in requirements.txt from 1.6.19 to 1.6.23",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Wed, 04 Apr 2018 16:08:35 GMT",
+        "id": 311295340,
+        "number": 90,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update thoth-common in requirements.txt from 0.0.1 to 0.0.3",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Wed, 04 Apr 2018 16:08:31 GMT",
+        "id": 311295317,
+        "number": 89,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update botocore in requirements.txt from 1.9.11 to 1.9.23",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Wed, 04 Apr 2018 16:08:28 GMT",
+        "id": 311295289,
+        "number": 88,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update boto3 in requirements.txt from 1.6.11 to 1.6.23",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Wed, 04 Apr 2018 12:57:36 GMT",
+        "id": 311218617,
+        "number": 2,
+        "repository": "storages",
+        "state": "closed",
+        "title": "Initial schema creation and graph sync",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Tue, 03 Apr 2018 16:10:21 GMT",
+        "id": 310901899,
+        "number": 87,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update botocore in requirements.txt from 1.9.11 to 1.9.22",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Tue, 03 Apr 2018 16:10:21 GMT",
+        "id": 310901900,
+        "number": 55,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update botocore in requirements.txt from 1.9.19 to 1.9.22",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Tue, 03 Apr 2018 16:10:16 GMT",
+        "id": 310901859,
+        "number": 86,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update boto3 in requirements.txt from 1.6.11 to 1.6.22",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Tue, 03 Apr 2018 16:10:15 GMT",
+        "id": 310901851,
+        "number": 54,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update boto3 in requirements.txt from 1.6.19 to 1.6.22",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Tue, 03 Apr 2018 03:07:24 GMT",
+        "id": 310678389,
+        "number": 53,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "[requires.io] dependency update on master branch",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Tue, 03 Apr 2018 02:04:04 GMT",
+        "id": 310667830,
+        "number": 52,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "[requires.io] dependency update on master branch",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Mon, 02 Apr 2018 16:08:02 GMT",
+        "id": 310526741,
+        "number": 85,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update ipython in requirements.txt from 6.2.1 to 6.3.0",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sun, 01 Apr 2018 18:59:39 GMT",
+        "id": 310345608,
+        "number": 49,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "initial Jenkinsfile and OpenShift BuildConfig template",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Sun, 01 Apr 2018 18:30:50 GMT",
+        "id": 310343794,
+        "number": 48,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Log POST content on errors",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Sat, 31 Mar 2018 16:13:21 GMT",
+        "id": 310252036,
+        "number": 47,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update botocore in requirements.txt from 1.9.19 to 1.9.21",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sat, 31 Mar 2018 16:13:18 GMT",
+        "id": 310252031,
+        "number": 46,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update boto3 in requirements.txt from 1.6.19 to 1.6.21",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sat, 31 Mar 2018 16:08:07 GMT",
+        "id": 310251625,
+        "number": 84,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update sqlalchemy in requirements.txt from 1.1.18 to 1.2.6",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sat, 31 Mar 2018 16:08:01 GMT",
+        "id": 310251617,
+        "number": 83,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update botocore in requirements.txt from 1.9.11 to 1.9.21",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sat, 31 Mar 2018 16:07:57 GMT",
+        "id": 310251614,
+        "number": 82,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update boto3 in requirements.txt from 1.6.11 to 1.6.21",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Fri, 30 Mar 2018 16:13:08 GMT",
+        "id": 310105211,
+        "number": 81,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update widgetsnbextension in requirements.txt from 3.0.8 to 3.2.0",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Fri, 30 Mar 2018 16:13:01 GMT",
+        "id": 310105188,
+        "number": 80,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update ipywidgets in requirements.txt from 7.0.5 to 7.2.0",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Fri, 30 Mar 2018 16:12:57 GMT",
+        "id": 310105165,
+        "number": 79,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update botocore in requirements.txt from 1.9.11 to 1.9.20",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Fri, 30 Mar 2018 16:12:54 GMT",
+        "id": 310105150,
+        "number": 78,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update boto3 in requirements.txt from 1.6.11 to 1.6.20",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Fri, 30 Mar 2018 16:12:50 GMT",
+        "id": 310105132,
+        "number": 77,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update bokeh in requirements.txt from 0.12.14 to 0.12.15",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Fri, 30 Mar 2018 16:09:12 GMT",
+        "id": 310104231,
+        "number": 45,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update botocore in requirements.txt from 1.9.19 to 1.9.20",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Fri, 30 Mar 2018 16:09:05 GMT",
+        "id": 310104207,
+        "number": 44,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update boto3 in requirements.txt from 1.6.19 to 1.6.20",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 29 Mar 2018 16:10:09 GMT",
+        "id": 309815596,
+        "number": 76,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update botocore in requirements.txt from 1.9.11 to 1.9.19",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 29 Mar 2018 16:10:01 GMT",
+        "id": 309815546,
+        "number": 75,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update boto3 in requirements.txt from 1.6.11 to 1.6.19",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 29 Mar 2018 07:50:13 GMT",
+        "id": 309653138,
+        "number": 5,
+        "repository": "core",
+        "state": "closed",
+        "title": "Temporary changes to master",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Wed, 28 Mar 2018 16:08:58 GMT",
+        "id": 309433486,
+        "number": 74,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update botocore in requirements.txt from 1.9.11 to 1.9.18",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Wed, 28 Mar 2018 16:08:55 GMT",
+        "id": 309433467,
+        "number": 73,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update boto3 in requirements.txt from 1.6.11 to 1.6.18",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Wed, 28 Mar 2018 16:08:31 GMT",
+        "id": 309433344,
+        "number": 43,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update botocore in requirements.txt from 1.9.16 to 1.9.18",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Wed, 28 Mar 2018 16:08:26 GMT",
+        "id": 309433321,
+        "number": 42,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update boto3 in requirements.txt from 1.6.16 to 1.6.18",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Tue, 27 Mar 2018 16:10:00 GMT",
+        "id": 309036077,
+        "number": 41,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update botocore in requirements.txt from 1.9.16 to 1.9.17",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Tue, 27 Mar 2018 16:09:53 GMT",
+        "id": 309036029,
+        "number": 40,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update boto3 in requirements.txt from 1.6.16 to 1.6.17",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Tue, 27 Mar 2018 16:09:50 GMT",
+        "id": 309036009,
+        "number": 39,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update aiohttp in requirements.txt from 2.2.5 to 3.1.1",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Tue, 27 Mar 2018 16:08:32 GMT",
+        "id": 309035512,
+        "number": 72,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update plotly in requirements.txt from 2.5.0 to 2.5.1",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Tue, 27 Mar 2018 16:08:29 GMT",
+        "id": 309035486,
+        "number": 71,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update botocore in requirements.txt from 1.9.11 to 1.9.17",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Tue, 27 Mar 2018 16:08:25 GMT",
+        "id": 309035458,
+        "number": 70,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update boto3 in requirements.txt from 1.6.11 to 1.6.17",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Tue, 27 Mar 2018 16:08:21 GMT",
+        "id": 309035432,
+        "number": 69,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update aiohttp in requirements.txt from 2.2.5 to 3.1.1",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Mon, 26 Mar 2018 16:07:09 GMT",
+        "id": 308636441,
+        "number": 38,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update python-dateutil in requirements.txt from 2.6.1 to 2.7.2",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Mon, 26 Mar 2018 16:06:55 GMT",
+        "id": 308636352,
+        "number": 68,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update python-dateutil in requirements.txt from 2.6.1 to 2.7.2",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Mon, 26 Mar 2018 12:46:50 GMT",
+        "id": 308557072,
+        "number": 4,
+        "repository": "core",
+        "state": "closed",
+        "title": "Respect common logging configuration",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Sun, 25 Mar 2018 16:11:06 GMT",
+        "id": 308362194,
+        "number": 67,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update scipy in requirements.txt from 0.19.1 to 1.0.1",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sun, 25 Mar 2018 16:11:02 GMT",
+        "id": 308362187,
+        "number": 37,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update python-dateutil in requirements.txt from 2.6.1 to 2.7.1",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sun, 25 Mar 2018 16:11:01 GMT",
+        "id": 308362185,
+        "number": 66,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update python-dateutil in requirements.txt from 2.6.1 to 2.7.1",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sat, 24 Mar 2018 16:09:09 GMT",
+        "id": 308275563,
+        "number": 36,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update botocore in requirements.txt from 1.9.8 to 1.9.16",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sat, 24 Mar 2018 16:09:03 GMT",
+        "id": 308275550,
+        "number": 35,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update boto3 in requirements.txt from 1.6.8 to 1.6.16",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sat, 24 Mar 2018 16:08:17 GMT",
+        "id": 308275465,
+        "number": 65,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update botocore in requirements.txt from 1.9.11 to 1.9.16",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sat, 24 Mar 2018 16:08:11 GMT",
+        "id": 308275451,
+        "number": 64,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update boto3 in requirements.txt from 1.6.11 to 1.6.16",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Fri, 23 Mar 2018 16:09:46 GMT",
+        "id": 308090490,
+        "number": 34,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update botocore in requirements.txt from 1.9.8 to 1.9.15",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Fri, 23 Mar 2018 16:09:42 GMT",
+        "id": 308090467,
+        "number": 33,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update boto3 in requirements.txt from 1.6.8 to 1.6.15",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Fri, 23 Mar 2018 16:06:41 GMT",
+        "id": 308089382,
+        "number": 63,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update botocore in requirements.txt from 1.9.11 to 1.9.15",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Fri, 23 Mar 2018 16:06:38 GMT",
+        "id": 308089365,
+        "number": 62,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update boto3 in requirements.txt from 1.6.11 to 1.6.15",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Fri, 23 Mar 2018 13:56:55 GMT",
+        "id": 308038895,
+        "number": 3,
+        "repository": "core",
+        "state": "closed",
+        "title": "this is template cleanup and jenkins pipeline",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Thu, 22 Mar 2018 16:09:49 GMT",
+        "id": 307711344,
+        "number": 61,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update virtualenv in requirements.txt from 15.1.0 to 15.2.0",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 22 Mar 2018 16:09:43 GMT",
+        "id": 307711306,
+        "number": 60,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update hashin in requirements.txt from 0.11.5 to 0.13.0",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 22 Mar 2018 16:09:38 GMT",
+        "id": 307711265,
+        "number": 32,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update botocore in requirements.txt from 1.9.8 to 1.9.14",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 22 Mar 2018 16:09:37 GMT",
+        "id": 307711263,
+        "number": 59,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update botocore in requirements.txt from 1.9.11 to 1.9.14",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 22 Mar 2018 16:09:33 GMT",
+        "id": 307711237,
+        "number": 58,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update boto3 in requirements.txt from 1.6.11 to 1.6.14",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 22 Mar 2018 16:09:33 GMT",
+        "id": 307711236,
+        "number": 31,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update boto3 in requirements.txt from 1.6.8 to 1.6.14",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 22 Mar 2018 09:03:28 GMT",
+        "id": 307556333,
+        "number": 17,
+        "repository": "dependency-monkey",
+        "state": "closed",
+        "title": "updates to jenkinsfile",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Wed, 21 Mar 2018 16:11:51 GMT",
+        "id": 307314003,
+        "number": 30,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update botocore in requirements.txt from 1.9.8 to 1.9.12",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Wed, 21 Mar 2018 16:11:47 GMT",
+        "id": 307313967,
+        "number": 29,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update boto3 in requirements.txt from 1.6.8 to 1.6.12",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Wed, 21 Mar 2018 16:11:43 GMT",
+        "id": 307313941,
+        "number": 28,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update aiohttp in requirements.txt from 2.2.5 to 3.1.0",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Wed, 21 Mar 2018 16:08:32 GMT",
+        "id": 307312579,
+        "number": 57,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update botocore in requirements.txt from 1.9.11 to 1.9.12",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Wed, 21 Mar 2018 16:08:28 GMT",
+        "id": 307312556,
+        "number": 56,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update boto3 in requirements.txt from 1.6.11 to 1.6.12",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Wed, 21 Mar 2018 16:08:25 GMT",
+        "id": 307312538,
+        "number": 55,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update aiohttp in requirements.txt from 2.2.5 to 3.1.0",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Tue, 20 Mar 2018 16:11:14 GMT",
+        "id": 306934641,
+        "number": 54,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update hashin in requirements.txt from 0.11.5 to 0.12.0",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Tue, 20 Mar 2018 16:10:21 GMT",
+        "id": 306934279,
+        "number": 27,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update thoth-storages in requirements.txt from 0.0.7 to 0.0.11",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Mon, 19 Mar 2018 16:10:56 GMT",
+        "id": 306529083,
+        "number": 53,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update cython in requirements.txt from 0.25.2 to 0.28.1",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sun, 18 Mar 2018 16:09:14 GMT",
+        "id": 306253493,
+        "number": 52,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update tornado in requirements.txt from 4.4.1 to 5.0.1",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sun, 18 Mar 2018 16:09:11 GMT",
+        "id": 306253491,
+        "number": 51,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update notebook in requirements.txt from 5.4.0 to 5.4.1",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sun, 18 Mar 2018 16:09:08 GMT",
+        "id": 306253485,
+        "number": 50,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update matplotlib in requirements.txt from 2.0.2 to 2.2.2",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sun, 18 Mar 2018 16:09:04 GMT",
+        "id": 306253479,
+        "number": 26,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update tornado in requirements.txt from 4.4.1 to 5.0.1",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sat, 17 Mar 2018 16:10:25 GMT",
+        "id": 306168362,
+        "number": 25,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update botocore in requirements.txt from 1.9.8 to 1.9.11",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sat, 17 Mar 2018 16:10:20 GMT",
+        "id": 306168355,
+        "number": 24,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update boto3 in requirements.txt from 1.6.8 to 1.6.11",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Fri, 16 Mar 2018 16:12:51 GMT",
+        "id": 305988865,
+        "number": 23,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update botocore in requirements.txt from 1.9.8 to 1.9.10",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Fri, 16 Mar 2018 16:12:47 GMT",
+        "id": 305988842,
+        "number": 22,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update boto3 in requirements.txt from 1.6.8 to 1.6.10",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Fri, 16 Mar 2018 16:12:44 GMT",
+        "id": 305988829,
+        "number": 21,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update aiohttp in requirements.txt from 2.2.5 to 3.0.9",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 15 Mar 2018 16:11:07 GMT",
+        "id": 305619452,
+        "number": 19,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update tornado in requirements.txt from 4.4.1 to 5.0",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 15 Mar 2018 16:11:01 GMT",
+        "id": 305619411,
+        "number": 18,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update thoth-storages in requirements.txt from 0.0.7 to 0.0.10",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 15 Mar 2018 16:10:55 GMT",
+        "id": 305619366,
+        "number": 17,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update six in requirements.txt from 1.10.0 to 1.11.0",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 15 Mar 2018 16:10:50 GMT",
+        "id": 305619337,
+        "number": 16,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update python-dateutil in requirements.txt from 2.6.1 to 2.7.0",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 15 Mar 2018 16:10:44 GMT",
+        "id": 305619293,
+        "number": 15,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update gremlinpython in requirements.txt from 3.2.6 to 3.3.1",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 15 Mar 2018 16:10:38 GMT",
+        "id": 305619253,
+        "number": 14,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update botocore in requirements.txt from 1.9.8 to 1.9.9",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 15 Mar 2018 16:10:35 GMT",
+        "id": 305619231,
+        "number": 49,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update thoth-storages in requirements.txt from 0.0.4 to 0.0.10",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 15 Mar 2018 16:10:32 GMT",
+        "id": 305619214,
+        "number": 13,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update boto3 in requirements.txt from 1.6.8 to 1.6.9",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 15 Mar 2018 16:10:28 GMT",
+        "id": 305619191,
+        "number": 48,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update thoth-lab in requirements.txt from 0.0.0 to 0.0.1",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 15 Mar 2018 16:10:21 GMT",
+        "id": 305619136,
+        "number": 47,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update cython in requirements.txt from 0.25.2 to 0.28",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 15 Mar 2018 16:10:19 GMT",
+        "id": 305619125,
+        "number": 12,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update aiogremlin in requirements.txt from 3.2.6rc1 to 3.3.1",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 15 Mar 2018 16:10:15 GMT",
+        "id": 305619108,
+        "number": 46,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update aiohttp in requirements.txt from 2.2.5 to 3.0.9",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 15 Mar 2018 16:10:13 GMT",
+        "id": 305619095,
+        "number": 11,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update aenum in requirements.txt from 1.4.5 to 2.1.0",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Wed, 14 Mar 2018 16:12:24 GMT",
+        "id": 305227539,
+        "number": 10,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update tornado in requirements.txt from 4.4.1 to 5.0",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Wed, 14 Mar 2018 16:12:20 GMT",
+        "id": 305227515,
+        "number": 9,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update thoth-storages in requirements.txt from 0.0.7 to 0.0.8",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Wed, 14 Mar 2018 16:12:17 GMT",
+        "id": 305227498,
+        "number": 8,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update six in requirements.txt from 1.10.0 to 1.11.0",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Wed, 14 Mar 2018 16:12:14 GMT",
+        "id": 305227476,
+        "number": 7,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update python-dateutil in requirements.txt from 2.6.1 to 2.7.0",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Wed, 14 Mar 2018 16:12:10 GMT",
+        "id": 305227448,
+        "number": 6,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update gremlinpython in requirements.txt from 3.2.6 to 3.3.1",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Wed, 14 Mar 2018 16:12:04 GMT",
+        "id": 305227414,
+        "number": 5,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update aiohttp in requirements.txt from 2.2.5 to 3.0.9",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Wed, 14 Mar 2018 16:12:00 GMT",
+        "id": 305227394,
+        "number": 4,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update aiogremlin in requirements.txt from 3.2.6rc1 to 3.3.1",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Wed, 14 Mar 2018 16:11:56 GMT",
+        "id": 305227365,
+        "number": 3,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Update aenum in requirements.txt from 1.4.5 to 2.1.0",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Wed, 14 Mar 2018 16:07:19 GMT",
+        "id": 305225342,
+        "number": 45,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update thoth-storages in requirements.txt from 0.0.4 to 0.0.8",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Wed, 14 Mar 2018 16:07:15 GMT",
+        "id": 305225314,
+        "number": 44,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update cython in requirements.txt from 0.25.2 to 0.28",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Wed, 14 Mar 2018 16:07:11 GMT",
+        "id": 305225282,
+        "number": 43,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update aiohttp in requirements.txt from 2.2.5 to 3.0.9",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Tue, 13 Mar 2018 16:42:05 GMT",
+        "id": 304844653,
+        "number": 2,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "[requires.io] dependency update on master branch",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Tue, 13 Mar 2018 16:07:47 GMT",
+        "id": 304830736,
+        "number": 42,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update plotly in requirements.txt from 2.4.1 to 2.5.0",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Tue, 13 Mar 2018 16:07:43 GMT",
+        "id": 304830707,
+        "number": 41,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update numpy in requirements.txt from 1.14.1 to 1.14.2",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Tue, 13 Mar 2018 16:07:39 GMT",
+        "id": 304830681,
+        "number": 40,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update jupyter-client in requirements.txt from 5.2.2 to 5.2.3",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Tue, 13 Mar 2018 16:07:36 GMT",
+        "id": 304830654,
+        "number": 39,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update async-timeout in requirements.txt from 2.0.0 to 2.0.1",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Tue, 13 Mar 2018 16:07:32 GMT",
+        "id": 304830624,
+        "number": 38,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update aiohttp in requirements.txt from 2.2.5 to 3.0.8",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Mon, 12 Mar 2018 16:16:39 GMT",
+        "id": 304440258,
+        "number": 37,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update python-dateutil in requirements.txt from 2.6.1 to 2.7.0",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Fri, 09 Mar 2018 16:08:34 GMT",
+        "id": 303892212,
+        "number": 36,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update aiohttp in requirements.txt from 2.2.5 to 3.0.7",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 08 Mar 2018 07:45:15 GMT",
+        "id": 303385458,
+        "number": 14,
+        "repository": "dependency-monkey",
+        "state": "closed",
+        "title": "some minor changes",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Wed, 07 Mar 2018 16:07:15 GMT",
+        "id": 303158908,
+        "number": 35,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update sqlalchemy in requirements.txt from 1.1.17 to 1.2.5",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Wed, 07 Mar 2018 16:07:11 GMT",
+        "id": 303158883,
+        "number": 34,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update protobuf in requirements.txt from 3.5.1 to 3.5.2",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Tue, 06 Mar 2018 16:10:08 GMT",
+        "id": 302763445,
+        "number": 33,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update matplotlib in requirements.txt from 2.0.2 to 2.2.0",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Tue, 06 Mar 2018 16:10:01 GMT",
+        "id": 302763383,
+        "number": 32,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update bleach in requirements.txt from 2.1.2 to 2.1.3",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Mon, 05 Mar 2018 16:08:29 GMT",
+        "id": 302359623,
+        "number": 31,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update tornado in requirements.txt from 4.4.1 to 5.0",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Mon, 05 Mar 2018 16:08:23 GMT",
+        "id": 302359577,
+        "number": 30,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update aiohttp in requirements.txt from 2.2.5 to 3.0.6",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Mon, 05 Mar 2018 10:15:07 GMT",
+        "id": 302240943,
+        "number": 29,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Add trigger",
+        "user_login": "vpavlin"
+    },
+    {
+        "created_at": "Mon, 05 Mar 2018 07:56:32 GMT",
+        "id": 302202005,
+        "number": 28,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Add image build and image stream definiton",
+        "user_login": "vpavlin"
+    },
+    {
+        "created_at": "Sun, 04 Mar 2018 14:55:52 GMT",
+        "id": 302092016,
+        "number": 13,
+        "repository": "dependency-monkey",
+        "state": "closed",
+        "title": "updated readme and template",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Sat, 03 Mar 2018 17:42:05 GMT",
+        "id": 302017289,
+        "number": 2,
+        "repository": "core",
+        "state": "closed",
+        "title": "Download janusgraph template on deployment",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Sat, 03 Mar 2018 16:09:12 GMT",
+        "id": 302009958,
+        "number": 27,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update widgetsnbextension in requirements.txt from 3.0.8 to 3.1.4",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sat, 03 Mar 2018 16:09:09 GMT",
+        "id": 302009953,
+        "number": 26,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update thoth-storages in requirements.txt from 0.0.3 to 0.0.4",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sat, 03 Mar 2018 16:09:05 GMT",
+        "id": 302009948,
+        "number": 25,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update sympy in requirements.txt from 1.0 to 1.1.1",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sat, 03 Mar 2018 16:09:00 GMT",
+        "id": 302009942,
+        "number": 24,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update sqlalchemy in requirements.txt from 1.1.17 to 1.2.4",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sat, 03 Mar 2018 16:08:57 GMT",
+        "id": 302009935,
+        "number": 23,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update seaborn in requirements.txt from 0.7.1 to 0.8.1",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sat, 03 Mar 2018 16:08:54 GMT",
+        "id": 302009932,
+        "number": 22,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update scipy in requirements.txt from 0.19.1 to 1.0.0",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sat, 03 Mar 2018 16:08:52 GMT",
+        "id": 302009922,
+        "number": 21,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update scikit-learn in requirements.txt from 0.18.2 to 0.19.1",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sat, 03 Mar 2018 16:08:48 GMT",
+        "id": 302009917,
+        "number": 20,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update scikit-image in requirements.txt from 0.12.3 to 0.13.1",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sat, 03 Mar 2018 16:08:46 GMT",
+        "id": 302009910,
+        "number": 19,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update patsy in requirements.txt from 0.4.1 to 0.5.0",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sat, 03 Mar 2018 16:08:42 GMT",
+        "id": 302009907,
+        "number": 18,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update pandas in requirements.txt from 0.19.2 to 0.22.0",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sat, 03 Mar 2018 16:08:39 GMT",
+        "id": 302009905,
+        "number": 17,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update numba in requirements.txt from 0.31.0 to 0.37.0",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sat, 03 Mar 2018 16:08:36 GMT",
+        "id": 302009896,
+        "number": 16,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update matplotlib in requirements.txt from 2.0.2 to 2.1.2",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sat, 03 Mar 2018 16:08:33 GMT",
+        "id": 302009888,
+        "number": 15,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update ipywidgets in requirements.txt from 7.0.5 to 7.1.2",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sat, 03 Mar 2018 16:08:29 GMT",
+        "id": 302009881,
+        "number": 14,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update h5py in requirements.txt from 2.6.0 to 2.7.1",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sat, 03 Mar 2018 16:08:26 GMT",
+        "id": 302009871,
+        "number": 13,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update cython in requirements.txt from 0.25.2 to 0.27.3",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sat, 03 Mar 2018 16:08:23 GMT",
+        "id": 302009863,
+        "number": 12,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update cloudpickle in requirements.txt from 0.2.2 to 0.5.2",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sat, 03 Mar 2018 16:08:20 GMT",
+        "id": 302009853,
+        "number": 11,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update beautifulsoup4 in requirements.txt from 4.5.3 to 4.6.0",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Sat, 03 Mar 2018 13:53:58 GMT",
+        "id": 301999784,
+        "number": 12,
+        "repository": "dependency-monkey",
+        "state": "closed",
+        "title": "added mattermost notification",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Fri, 02 Mar 2018 16:09:21 GMT",
+        "id": 301818329,
+        "number": 8,
+        "repository": "adviser",
+        "state": "closed",
+        "title": "Update thoth-storages in requirements.txt from 0.0.3 to 0.0.4",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Fri, 02 Mar 2018 10:04:45 GMT",
+        "id": 301713979,
+        "number": 7,
+        "repository": "adviser",
+        "state": "closed",
+        "title": "Update tornado in requirements.txt from 4.4.1 to 4.5.3",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Fri, 02 Mar 2018 10:04:42 GMT",
+        "id": 301713967,
+        "number": 6,
+        "repository": "adviser",
+        "state": "closed",
+        "title": "Update six in requirements.txt from 1.10.0 to 1.11.0",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Fri, 02 Mar 2018 10:04:37 GMT",
+        "id": 301713944,
+        "number": 5,
+        "repository": "adviser",
+        "state": "closed",
+        "title": "Update gremlinpython in requirements.txt from 3.2.6 to 3.3.1",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Fri, 02 Mar 2018 10:04:31 GMT",
+        "id": 301713915,
+        "number": 4,
+        "repository": "adviser",
+        "state": "closed",
+        "title": "Update aiohttp in requirements.txt from 2.2.5 to 3.0.5",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Fri, 02 Mar 2018 10:04:25 GMT",
+        "id": 301713883,
+        "number": 3,
+        "repository": "adviser",
+        "state": "closed",
+        "title": "Update aiogremlin in requirements.txt from 3.2.6rc1 to 3.3.1",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Fri, 02 Mar 2018 10:04:18 GMT",
+        "id": 301713858,
+        "number": 2,
+        "repository": "adviser",
+        "state": "closed",
+        "title": "Update aenum in requirements.txt from 1.4.5 to 2.1.0",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Fri, 02 Mar 2018 10:02:53 GMT",
+        "id": 301713438,
+        "number": 1,
+        "repository": "adviser",
+        "state": "closed",
+        "title": "Add dependencies.yml for dependencies.io",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Fri, 02 Mar 2018 09:20:05 GMT",
+        "id": 301701246,
+        "number": 10,
+        "repository": "dependency-monkey",
+        "state": "closed",
+        "title": "hotfix for pypi-validator job not pulling its image",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Fri, 02 Mar 2018 07:40:32 GMT",
+        "id": 301679165,
+        "number": 7,
+        "repository": "dependency-monkey",
+        "state": "closed",
+        "title": "added feature/pypi-validator-image",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Thu, 01 Mar 2018 15:35:49 GMT",
+        "id": 301449842,
+        "number": 9,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update tornado in requirements.txt from 4.4.1 to 4.5.3",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 01 Mar 2018 15:35:46 GMT",
+        "id": 301449821,
+        "number": 8,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update thoth-analyzer in requirements.txt from 0.0.3 to 0.0.4",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 01 Mar 2018 15:35:43 GMT",
+        "id": 301449796,
+        "number": 7,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update six in requirements.txt from 1.10.0 to 1.11.0",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 01 Mar 2018 15:35:40 GMT",
+        "id": 301449781,
+        "number": 6,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update gremlinpython in requirements.txt from 3.2.6 to 3.3.1",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 01 Mar 2018 15:35:35 GMT",
+        "id": 301449760,
+        "number": 5,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update aiohttp in requirements.txt from 2.2.5 to 3.0.5",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 01 Mar 2018 15:35:30 GMT",
+        "id": 301449721,
+        "number": 4,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update aiogremlin in requirements.txt from 3.2.6rc1 to 3.3.1",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 01 Mar 2018 15:35:23 GMT",
+        "id": 301449682,
+        "number": 3,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Update aenum in requirements.txt from 1.4.5 to 2.1.0",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 01 Mar 2018 15:34:21 GMT",
+        "id": 301449259,
+        "number": 3,
+        "repository": "package-extract",
+        "state": "closed",
+        "title": "Update thoth-analyzer in requirements.txt from 0.0.3 to 0.0.4",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 01 Mar 2018 15:34:02 GMT",
+        "id": 301449127,
+        "number": 4,
+        "repository": "solver",
+        "state": "closed",
+        "title": "Update thoth-analyzer in requirements.txt from 0.0.2 to 0.0.4",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 01 Mar 2018 15:33:59 GMT",
+        "id": 301449091,
+        "number": 3,
+        "repository": "solver",
+        "state": "closed",
+        "title": "Update delegator.py in requirements.txt from 0.0.14 to 0.1.0",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 01 Mar 2018 15:29:15 GMT",
+        "id": 301447296,
+        "number": 1,
+        "repository": "user-api",
+        "state": "closed",
+        "title": "Add dependencies.yml for dependencies.io",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 01 Mar 2018 15:29:11 GMT",
+        "id": 301447274,
+        "number": 2,
+        "repository": "solver",
+        "state": "closed",
+        "title": "Add dependencies.yml for dependencies.io",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 01 Mar 2018 15:29:08 GMT",
+        "id": 301447244,
+        "number": 2,
+        "repository": "package-extract",
+        "state": "closed",
+        "title": "Add dependencies.yml for dependencies.io",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 01 Mar 2018 15:29:07 GMT",
+        "id": 301447236,
+        "number": 1,
+        "repository": "lab",
+        "state": "closed",
+        "title": "Add dependencies.yml for dependencies.io",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 01 Mar 2018 15:29:02 GMT",
+        "id": 301447201,
+        "number": 2,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "Add dependencies.yml for dependencies.io",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 01 Mar 2018 15:28:37 GMT",
+        "id": 301447034,
+        "number": 1,
+        "repository": "analyzer",
+        "state": "closed",
+        "title": "Add dependencies.yml for dependencies.io",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 01 Mar 2018 15:28:27 GMT",
+        "id": 301446949,
+        "number": 1,
+        "repository": "common",
+        "state": "closed",
+        "title": "Add dependencies.yml for dependencies.io",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Thu, 01 Mar 2018 14:41:17 GMT",
+        "id": 301429138,
+        "number": 1,
+        "repository": "graph-sync-job",
+        "state": "closed",
+        "title": "[requires.io] dependency update on master branch",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 01 Mar 2018 14:41:12 GMT",
+        "id": 301429096,
+        "number": 1,
+        "repository": "solver",
+        "state": "closed",
+        "title": "[requires.io] dependency update on master branch",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 01 Mar 2018 14:41:09 GMT",
+        "id": 301429073,
+        "number": 1,
+        "repository": "storages",
+        "state": "closed",
+        "title": "[requires.io] dependency update on master branch",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 01 Mar 2018 14:41:01 GMT",
+        "id": 301429022,
+        "number": 1,
+        "repository": "jupyter-notebook",
+        "state": "closed",
+        "title": "[requires.io] dependency update on master branch",
+        "user_login": "fridex"
+    },
+    {
+        "created_at": "Thu, 01 Mar 2018 13:43:56 GMT",
+        "id": 301408910,
+        "number": 1,
+        "repository": "core",
+        "state": "closed",
+        "title": "removed the janusgraph template due to new location",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Wed, 28 Feb 2018 16:06:14 GMT",
+        "id": 301082981,
+        "number": 6,
+        "repository": "dependency-monkey",
+        "state": "closed",
+        "title": "Update openshift in requirements.txt from 0.4.3 to 0.4.4",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Tue, 27 Feb 2018 16:09:24 GMT",
+        "id": 300693039,
+        "number": 4,
+        "repository": "dependency-monkey",
+        "state": "closed",
+        "title": "Update kubernetes in requirements.txt from 4.0.0 to 5.0.0",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Tue, 27 Feb 2018 08:57:52 GMT",
+        "id": 300541918,
+        "number": 3,
+        "repository": "dependency-monkey",
+        "state": "closed",
+        "title": "Feature/no more result queue",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Mon, 26 Feb 2018 08:49:26 GMT",
+        "id": 300151985,
+        "number": 2,
+        "repository": "dependency-monkey",
+        "state": "closed",
+        "title": "merge feature/pymongo",
+        "user_login": "goern"
+    },
+    {
+        "created_at": "Sat, 24 Feb 2018 19:17:33 GMT",
+        "id": 299965236,
+        "number": 1,
+        "repository": "dependency-monkey",
+        "state": "closed",
+        "title": "Add dependencies.yml for dependencies.io",
+        "user_login": "dependencies[bot]"
+    },
+    {
+        "created_at": "Mon, 19 Feb 2018 19:51:59 GMT",
+        "id": 298385244,
+        "number": 1,
+        "repository": "package-extract",
+        "state": "closed",
+        "title": "WIP: Store information about layer that introduce the given package",
+        "user_login": "fridex"
+    }
+]

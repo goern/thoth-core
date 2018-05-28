@@ -31,15 +31,15 @@ from prometheus_client import CONTENT_TYPE_LATEST
 from prometheus_client import Counter, Histogram
 from prometheus_client import core, generate_latest
 
-import utils
 import exceptions
 
-__version__ = '0.1.0'
+__version__ = '0.2.0'
 __description__ = 'Thoth: SrcOps and DevOps Dashboard'
 __git_commit_id__ = os.getenv('OPENSHIFT_BUILD_COMMIT', 'local')
 
 
 DEBUG = bool(os.getenv('DEBUG', False))
+MOCK = bool(os.getenv('MOCK', False))
 
 FLASK_REQUEST_LATENCY = Histogram('flask_request_latency_seconds', 'Flask Request Latency',
                                   ['method', 'endpoint'])
@@ -53,6 +53,11 @@ if DEBUG:
     logger.setLevel(level=logging.DEBUG)
 else:
     logger.setLevel(level=logging.INFO)
+
+if MOCK:
+    import utils_mock as utils
+else:
+    import utils
 
 
 def before_request():
