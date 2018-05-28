@@ -37,6 +37,8 @@ from kubernetes.client.rest import ApiException
 import exceptions
 
 
+IMAGESTREAMTAG_CHECKSUM_REGEX = r"([a-z:/]+)?(\@[a-z0-9:]+)?"
+
 DEBUG = bool(os.getenv('DEBUG', False))
 THOTH_NAMESPACE = 'thoth-test-core'
 
@@ -60,7 +62,7 @@ def getPullRequests(include_closed: bool) -> List:
 
     query = 'is:open is:pr archived:false user:thoth-station '
     if include_closed:
-        query = 'is:open is:closed is:pr archived:false user:thoth-station '
+        query = 'is:pr archived:false user:thoth-station '
 
     github = Github(SESHETA_GITHUB_ACCESS_TOKEN)
 
@@ -274,12 +276,21 @@ def _getOpenShiftConfiguration() -> openshift.client.Configuration:
 
 
 def _splitFullRefImage(image: str) -> List:
+    sha = None
+    images = None
+
     if not image.startswith('docker://'):
         image = 'docker://' + image
 
     # let's splite the image URL and esp the sha
     o = urlparse(image)
-    image, sha = o.path.split('@')
+
+    try:
+        image, sha = o.path.split('@')
+    except ValueError as e:
+        logger.warn(e)
+        image = o.path
+        sha = None
 
     logger.debug(o, image, sha)
 
@@ -289,4 +300,9 @@ def _splitFullRefImage(image: str) -> List:
 def _splitImage(image: str) -> List:
     s = image.split('/')
 
-    return s[1], s[2]
+    try:
+        return s[1], s[2]
+    except IndexError as e:
+        logger.warn(e)
+
+        return image, None

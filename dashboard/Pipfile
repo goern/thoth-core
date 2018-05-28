@@ -8,13 +8,14 @@ name = "pypi"
 [packages]
 
 requests = "*"
-Flask = "*"
+flask = "*"
 gunicorn = "*"
 daiquiri = "*"
-prometheus_client = "*"
-PyGithub = "*"
+prometheus-client = "*"
+pygithub = "*"
 openshift = "<0.6"
 kubernetes = "<6.0"
+pyhamcrest = "*"
 
 
 [dev-packages]
@@ -23,4 +24,4 @@ pytest = "*"
 pylint = "*"
 "autopep8" = "*"
 behave = "*"
-PyHamcrest = "*"
+pyhamcrest = "*"
