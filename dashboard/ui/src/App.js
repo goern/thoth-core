@@ -1,42 +1,28 @@
-import * as React from 'react';
-import { withRouter } from 'react-router-dom';
-import { connect } from 'react-redux';
-import { Routes } from './Routes';
-import { MastHead } from './components/Nav/MastHead';
-import { VerticalNav } from './components/Nav/VerticalNav';
-import './css/App.css';
+import React, { Component } from "react";
+import { withRouter } from "react-router-dom";
 
-type Props = {
-  history: Array<string>,
-  credentials: Credentials
-};
+import MastHead from "./components/MastHead";
+import { Routes } from "./Routes"
 
-type State = {};
+import "../node_modules/patternfly/dist/css/patternfly.css";
+import "../node_modules/patternfly/dist/css/patternfly-additions.css";
+import "../node_modules/patternfly-react/dist/css/patternfly-react.css";
+import "./App.css";
 
-class App extends React.Component<Props, State> {
-  handleNavClick = (event: Event) => {
-    event.preventDefault();
-    let target = (event.currentTarget: any);
-    if (target.getAttribute) {
-      let href = target.getAttribute('href');
-      this.props.history.push(href);
-    }
+class App extends Component {
+  handleTitleClick = () => {
+  };
+  handleNavToggle = () => {
   };
 
   render() {
     return (
-      <div>
+      <div className="App">
         <MastHead />
-        <Routes childProps={this.props} />
+        <Routes/>
       </div>
     );
   }
 }
 
-const mapStateToProps = ({ loginReducer }) => {
-  return {
-    credentials: loginReducer
-  };
-};
-
-export default withRouter(connect(mapStateToProps)(App));
+export default withRouter(App);
