@@ -24,7 +24,7 @@ import logging
 
 import daiquiri
 
-from flask import Flask, Response, jsonify, request, render_template
+from flask import Flask, Response, jsonify, request, render_template, send_from_directory
 from flask.helpers import make_response
 
 from prometheus_client import CONTENT_TYPE_LATEST
@@ -74,7 +74,7 @@ def after_request(response):
     return response
 
 
-application = Flask(__name__)
+application = Flask(__name__, static_folder='ui/build')
 application.logger.setLevel(logging.DEBUG)
 
 application.before_request(before_request)
@@ -100,11 +100,6 @@ def api_liveness():
 @application.route('/metrics')
 def metrics():
     return Response(generate_latest(), mimetype=CONTENT_TYPE_LATEST)
-
-
-@application.route('/')
-def index():
-    return render_template('index.html')
 
 
 @application.route('/pullrequests')
@@ -250,6 +245,20 @@ def getStatusByDeploymentConfig(deploymentconfig):
         logger.error(e.message)
 
         return jsonify({'error': e.message}), 500
+
+
+@application.route('/', defaults={'path': ''})
+@application.route('/<path:path>')
+def index(path):
+    logger.info('path = ' + path)
+    if path == "":
+        logger.info('path = ' + path)
+        return send_from_directory('ui/build', 'index.html')
+    else:
+        if os.path.exists("ui/build/" + path):
+            return send_from_directory('ui/build', path)
+        else:
+            return send_from_directory('ui/build', 'index.html')
 
 
 if __name__ == "__main__":

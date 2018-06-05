@@ -1,29 +1,15 @@
-import * as React from 'react';
-import { Route, Switch } from 'react-router-dom';
-import asyncComponent from './components/Router/AsyncComponent';
-import { AuthenticatedRoute } from './components/Router/AuthenticatedRoute';
-import { UnauthenticatedRoute } from './components/Router/UnauthenticatedRoute';
+import React from "react";
+import {
+  Switch,
+  Route,
+} from "react-router-dom";
 
-const importHome = asyncComponent(() =>
-    import ('./pages/Home'));
-const importNotFound = asyncComponent(() =>
-    import ('./pages/NotFound'));
+import Home from "./pages/Home"
+import NotFound from "./pages/NotFound";
 
-type Props = {
-    childProps: any
-};
-export const Routes = (props: Props) => {
-    return ( <
-        Switch >
-        <
-        UnauthenticatedRoute path = "/"
-        exact component = { importHome }
-        props = { props.childProps }
-        />
-
-        { /* Finally, catch all unmatched routes */ } <
-        Route component = { importNotFound }
-        /> <
-        /Switch>
-    );
-};
+export const Routes = () => (
+  <Switch>
+    <Route path="/" exact component={ Home } />
+    <Route component={ NotFound } />
+  </Switch>
+);
