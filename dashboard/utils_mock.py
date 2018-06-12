@@ -120,7 +120,7 @@ def getContainersByDeploymentConfig(deploymentconfig) -> List:
                             },
                             'containerName': container['name'],
                             'imageStreamTags': getImageStreamTagBySha(sha),
-                            'pullRequests': getPullRequestByNumber(101)
+                            'pullRequest': getPullRequestByNumber(101)
                         }
                     })
 
