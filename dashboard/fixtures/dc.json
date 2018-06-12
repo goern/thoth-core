@@ -1,0 +1,1479 @@
+{
+    "apiVersion": "v1",
+    "items": [
+        {
+            "apiVersion": "apps.openshift.io/v1",
+            "kind": "DeploymentConfig",
+            "metadata": {
+                "creationTimestamp": "2018-03-21T11:46:02Z",
+                "generation": 20,
+                "labels": {
+                    "app": "dependency-monkey"
+                },
+                "name": "dependency-monkey-api",
+                "namespace": "thoth-test-core",
+                "resourceVersion": "81143720",
+                "selfLink": "/apis/apps.openshift.io/v1/namespaces/thoth-test-core/deploymentconfigs/dependency-monkey-api",
+                "uid": "6e5701c5-2cfd-11e8-837a-fa163e151577"
+            },
+            "spec": {
+                "replicas": 1,
+                "selector": {
+                    "app": "dependency-monkey",
+                    "deploymentconfig": "dependency-monkey-api"
+                },
+                "strategy": {
+                    "activeDeadlineSeconds": 21600,
+                    "resources": {},
+                    "rollingParams": {
+                        "intervalSeconds": 1,
+                        "maxSurge": "25%",
+                        "maxUnavailable": "25%",
+                        "timeoutSeconds": 600,
+                        "updatePeriodSeconds": 1
+                    },
+                    "type": "Rolling"
+                },
+                "template": {
+                    "metadata": {
+                        "creationTimestamp": null,
+                        "labels": {
+                            "app": "dependency-monkey",
+                            "deploymentconfig": "dependency-monkey-api"
+                        }
+                    },
+                    "spec": {
+                        "containers": [
+                            {
+                                "env": [
+                                    {
+                                        "name": "THOTH_DEPENDENCY_MONKEY_NAMESPACE",
+                                        "valueFrom": {
+                                            "fieldRef": {
+                                                "apiVersion": "v1",
+                                                "fieldPath": "metadata.namespace"
+                                            }
+                                        }
+                                    }
+                                ],
+                                "image": "docker-registry.default.svc:5000/thoth-test-core/dependency-monkey-api@sha256:3a9fd321141b9f7055f9e54dbeb1b8384c37e5e20c0164dffcd8908619427d67",
+                                "imagePullPolicy": "Always",
+                                "name": "dependency-monkey-api",
+                                "ports": [
+                                    {
+                                        "containerPort": 8080,
+                                        "protocol": "TCP"
+                                    }
+                                ],
+                                "resources": {
+                                    "limits": {
+                                        "cpu": "500m",
+                                        "memory": "256Mi"
+                                    },
+                                    "requests": {
+                                        "cpu": "250m",
+                                        "memory": "256Mi"
+                                    }
+                                },
+                                "terminationMessagePath": "/dev/termination-log",
+                                "terminationMessagePolicy": "File"
+                            }
+                        ],
+                        "dnsPolicy": "ClusterFirst",
+                        "restartPolicy": "Always",
+                        "schedulerName": "default-scheduler",
+                        "securityContext": {},
+                        "serviceAccount": "validation-job-runner",
+                        "serviceAccountName": "validation-job-runner",
+                        "terminationGracePeriodSeconds": 30
+                    }
+                },
+                "test": false,
+                "triggers": [
+                    {
+                        "imageChangeParams": {
+                            "containerNames": [
+                                "dependency-monkey-api"
+                            ],
+                            "from": {
+                                "kind": "ImageStreamTag",
+                                "name": "dependency-monkey-api:test",
+                                "namespace": "thoth-test-core"
+                            },
+                            "lastTriggeredImage": "docker-registry.default.svc:5000/thoth-test-core/dependency-monkey-api@sha256:3a9fd321141b9f7055f9e54dbeb1b8384c37e5e20c0164dffcd8908619427d67"
+                        },
+                        "type": "ImageChange"
+                    }
+                ]
+            },
+            "status": {
+                "availableReplicas": 1,
+                "conditions": [
+                    {
+                        "lastTransitionTime": "2018-04-27T13:03:02Z",
+                        "lastUpdateTime": "2018-04-27T13:03:02Z",
+                        "message": "Deployment config has minimum availability.",
+                        "status": "True",
+                        "type": "Available"
+                    },
+                    {
+                        "lastTransitionTime": "2018-06-12T11:40:49Z",
+                        "lastUpdateTime": "2018-06-12T11:40:51Z",
+                        "message": "replication controller \"dependency-monkey-api-18\" successfully rolled out",
+                        "reason": "NewReplicationControllerAvailable",
+                        "status": "True",
+                        "type": "Progressing"
+                    }
+                ],
+                "details": {
+                    "causes": [
+                        {
+                            "type": "Manual"
+                        }
+                    ],
+                    "message": "manual change"
+                },
+                "latestVersion": 18,
+                "observedGeneration": 20,
+                "readyReplicas": 1,
+                "replicas": 1,
+                "unavailableReplicas": 0,
+                "updatedReplicas": 1
+            }
+        },
+        {
+            "apiVersion": "apps.openshift.io/v1",
+            "kind": "DeploymentConfig",
+            "metadata": {
+                "creationTimestamp": "2018-03-13T08:50:27Z",
+                "generation": 68,
+                "labels": {
+                    "app": "janusgraph",
+                    "service": "janusgraph"
+                },
+                "name": "janusgraph",
+                "namespace": "thoth-test-core",
+                "resourceVersion": "73075542",
+                "selfLink": "/apis/apps.openshift.io/v1/namespaces/thoth-test-core/deploymentconfigs/janusgraph",
+                "uid": "93c98d86-269b-11e8-9afe-fa163e151577"
+            },
+            "spec": {
+                "replicas": 1,
+                "selector": {
+                    "service": "janusgraph"
+                },
+                "strategy": {
+                    "activeDeadlineSeconds": 21600,
+                    "customParams": {},
+                    "recreateParams": {
+                        "timeoutSeconds": 600
+                    },
+                    "resources": {},
+                    "type": "Recreate"
+                },
+                "template": {
+                    "metadata": {
+                        "creationTimestamp": null,
+                        "labels": {
+                            "service": "janusgraph"
+                        }
+                    },
+                    "spec": {
+                        "containers": [
+                            {
+                                "env": [
+                                    {
+                                        "name": "_JAVA_OPTIONS",
+                                        "value": "-Djava.net.preferIPv4Stack=true"
+                                    }
+                                ],
+                                "image": "docker-registry.default.svc:5000/thoth-test-core/janusgraph@sha256:76beddad1a9cd76856ba7bd95f4dff6329a7b660dbc1f290aa4928f29feed237",
+                                "imagePullPolicy": "Always",
+                                "name": "janusgraph",
+                                "ports": [
+                                    {
+                                        "containerPort": 8182,
+                                        "protocol": "TCP"
+                                    }
+                                ],
+                                "readinessProbe": {
+                                    "failureThreshold": 3,
+                                    "initialDelaySeconds": 20,
+                                    "periodSeconds": 10,
+                                    "successThreshold": 1,
+                                    "tcpSocket": {
+                                        "port": 8182
+                                    },
+                                    "timeoutSeconds": 10
+                                },
+                                "resources": {
+                                    "limits": {
+                                        "cpu": "2",
+                                        "memory": "8Gi"
+                                    },
+                                    "requests": {
+                                        "cpu": "2",
+                                        "memory": "6Gi"
+                                    }
+                                },
+                                "terminationMessagePath": "/dev/termination-log",
+                                "terminationMessagePolicy": "File"
+                            }
+                        ],
+                        "dnsPolicy": "ClusterFirst",
+                        "restartPolicy": "Always",
+                        "schedulerName": "default-scheduler",
+                        "securityContext": {},
+                        "terminationGracePeriodSeconds": 30
+                    }
+                },
+                "test": false,
+                "triggers": [
+                    {
+                        "imageChangeParams": {
+                            "automatic": true,
+                            "containerNames": [
+                                "janusgraph"
+                            ],
+                            "from": {
+                                "kind": "ImageStreamTag",
+                                "name": "janusgraph:2.0.0",
+                                "namespace": "thoth-test-core"
+                            },
+                            "lastTriggeredImage": "docker-registry.default.svc:5000/thoth-test-core/janusgraph@sha256:76beddad1a9cd76856ba7bd95f4dff6329a7b660dbc1f290aa4928f29feed237"
+                        },
+                        "type": "ImageChange"
+                    },
+                    {
+                        "type": "ConfigChange"
+                    }
+                ]
+            },
+            "status": {
+                "availableReplicas": 1,
+                "conditions": [
+                    {
+                        "lastTransitionTime": "2018-05-29T08:44:06Z",
+                        "lastUpdateTime": "2018-05-29T08:45:36Z",
+                        "message": "replication controller \"janusgraph-60\" successfully rolled out",
+                        "reason": "NewReplicationControllerAvailable",
+                        "status": "True",
+                        "type": "Progressing"
+                    },
+                    {
+                        "lastTransitionTime": "2018-06-04T20:27:47Z",
+                        "lastUpdateTime": "2018-06-04T20:27:47Z",
+                        "message": "Deployment config has minimum availability.",
+                        "status": "True",
+                        "type": "Available"
+                    }
+                ],
+                "details": {
+                    "causes": [
+                        {
+                            "type": "ConfigChange"
+                        }
+                    ],
+                    "message": "config change"
+                },
+                "latestVersion": 60,
+                "observedGeneration": 68,
+                "readyReplicas": 1,
+                "replicas": 1,
+                "unavailableReplicas": 0,
+                "updatedReplicas": 1
+            }
+        },
+        {
+            "apiVersion": "apps.openshift.io/v1",
+            "kind": "DeploymentConfig",
+            "metadata": {
+                "creationTimestamp": "2018-04-17T14:58:42Z",
+                "generation": 9,
+                "labels": {
+                    "template": "jenkins-persistent"
+                },
+                "name": "jenkins",
+                "namespace": "thoth-test-core",
+                "resourceVersion": "74264883",
+                "selfLink": "/apis/apps.openshift.io/v1/namespaces/thoth-test-core/deploymentconfigs/jenkins",
+                "uid": "d1c19ba8-424f-11e8-837a-fa163e151577"
+            },
+            "spec": {
+                "replicas": 1,
+                "selector": {
+                    "name": "jenkins"
+                },
+                "strategy": {
+                    "activeDeadlineSeconds": 21600,
+                    "recreateParams": {
+                        "timeoutSeconds": 600
+                    },
+                    "resources": {},
+                    "type": "Recreate"
+                },
+                "template": {
+                    "metadata": {
+                        "creationTimestamp": null,
+                        "labels": {
+                            "name": "jenkins"
+                        }
+                    },
+                    "spec": {
+                        "containers": [
+                            {
+                                "env": [
+                                    {
+                                        "name": "OPENSHIFT_ENABLE_OAUTH",
+                                        "value": "true"
+                                    },
+                                    {
+                                        "name": "OPENSHIFT_ENABLE_REDIRECT_PROMPT",
+                                        "value": "true"
+                                    },
+                                    {
+                                        "name": "KUBERNETES_MASTER",
+                                        "value": "https://kubernetes.default:443"
+                                    },
+                                    {
+                                        "name": "KUBERNETES_TRUST_CERTIFICATES",
+                                        "value": "true"
+                                    },
+                                    {
+                                        "name": "JENKINS_SERVICE_NAME",
+                                        "value": "jenkins"
+                                    },
+                                    {
+                                        "name": "JNLP_SERVICE_NAME",
+                                        "value": "jenkins-jnlp"
+                                    },
+                                    {
+                                        "name": "JAVA_OPTS",
+                                        "value": "-Dhudson.model.ParametersAction.keepUndefinedParameters=true -Djenkins.model.Jenkins.logStartupPerformance=true -Djava.security.egd=file:/dev/./urandom -Djenkins.install.runSetupWizard=false -Dhudson.DNSMultiCast.disabled=true -Dhudson.model.ParametersAction.keepUndefinedParameters=true"
+                                    },
+                                    {
+                                        "name": "JAVA_GC_OPTS",
+                                        "value": "-XX:+UseParallelGC -XX:MaxPermSize=100m -XX:MinHeapFreeRatio=20 -XX:MaxHeapFreeRatio=40 -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -XX:MaxMetaspaceSize=500m"
+                                    }
+                                ],
+                                "image": "docker-registry.default.svc:5000/thoth-test-core/jenkins@sha256:197eabf1d74faa9b52a4163d910abd71e3b633f7598175621506b3c25f47e995",
+                                "imagePullPolicy": "IfNotPresent",
+                                "livenessProbe": {
+                                    "failureThreshold": 30,
+                                    "httpGet": {
+                                        "path": "/login",
+                                        "port": 8080,
+                                        "scheme": "HTTP"
+                                    },
+                                    "initialDelaySeconds": 420,
+                                    "periodSeconds": 10,
+                                    "successThreshold": 1,
+                                    "timeoutSeconds": 3
+                                },
+                                "name": "jenkins",
+                                "readinessProbe": {
+                                    "failureThreshold": 3,
+                                    "httpGet": {
+                                        "path": "/login",
+                                        "port": 8080,
+                                        "scheme": "HTTP"
+                                    },
+                                    "initialDelaySeconds": 3,
+                                    "periodSeconds": 10,
+                                    "successThreshold": 1,
+                                    "timeoutSeconds": 3
+                                },
+                                "resources": {
+                                    "limits": {
+                                        "cpu": "2",
+                                        "memory": "10Gi"
+                                    },
+                                    "requests": {
+                                        "cpu": "2",
+                                        "memory": "4Gi"
+                                    }
+                                },
+                                "securityContext": {
+                                    "capabilities": {},
+                                    "privileged": false
+                                },
+                                "terminationMessagePath": "/dev/termination-log",
+                                "terminationMessagePolicy": "File",
+                                "volumeMounts": [
+                                    {
+                                        "mountPath": "/var/lib/jenkins",
+                                        "name": "jenkins-data"
+                                    }
+                                ]
+                            }
+                        ],
+                        "dnsPolicy": "ClusterFirst",
+                        "restartPolicy": "Always",
+                        "schedulerName": "default-scheduler",
+                        "securityContext": {},
+                        "serviceAccount": "jenkins",
+                        "serviceAccountName": "jenkins",
+                        "terminationGracePeriodSeconds": 30,
+                        "volumes": [
+                            {
+                                "name": "jenkins-data",
+                                "persistentVolumeClaim": {
+                                    "claimName": "jenkins"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "test": false,
+                "triggers": [
+                    {
+                        "imageChangeParams": {
+                            "automatic": true,
+                            "containerNames": [
+                                "jenkins"
+                            ],
+                            "from": {
+                                "kind": "ImageStreamTag",
+                                "name": "jenkins:test",
+                                "namespace": "thoth-test-core"
+                            },
+                            "lastTriggeredImage": "docker-registry.default.svc:5000/thoth-test-core/jenkins@sha256:197eabf1d74faa9b52a4163d910abd71e3b633f7598175621506b3c25f47e995"
+                        },
+                        "type": "ImageChange"
+                    },
+                    {
+                        "type": "ConfigChange"
+                    }
+                ]
+            },
+            "status": {
+                "availableReplicas": 1,
+                "conditions": [
+                    {
+                        "lastTransitionTime": "2018-06-05T19:00:02Z",
+                        "lastUpdateTime": "2018-06-05T19:00:02Z",
+                        "message": "Deployment config has minimum availability.",
+                        "status": "True",
+                        "type": "Available"
+                    },
+                    {
+                        "lastTransitionTime": "2018-06-05T18:58:50Z",
+                        "lastUpdateTime": "2018-06-05T19:00:03Z",
+                        "message": "replication controller \"jenkins-4\" successfully rolled out",
+                        "reason": "NewReplicationControllerAvailable",
+                        "status": "True",
+                        "type": "Progressing"
+                    }
+                ],
+                "details": {
+                    "causes": [
+                        {
+                            "imageTrigger": {
+                                "from": {
+                                    "kind": "DockerImage",
+                                    "name": "docker-registry.default.svc:5000/thoth-test-core/jenkins@sha256:197eabf1d74faa9b52a4163d910abd71e3b633f7598175621506b3c25f47e995"
+                                }
+                            },
+                            "type": "ImageChange"
+                        }
+                    ],
+                    "message": "image change"
+                },
+                "latestVersion": 4,
+                "observedGeneration": 9,
+                "readyReplicas": 1,
+                "replicas": 1,
+                "unavailableReplicas": 0,
+                "updatedReplicas": 1
+            }
+        },
+        {
+            "apiVersion": "apps.openshift.io/v1",
+            "kind": "DeploymentConfig",
+            "metadata": {
+                "annotations": {
+                    "kubectl.kubernetes.io/last-applied-configuration": "{\"apiVersion\":\"v1\",\"kind\":\"DeploymentConfig\",\"metadata\":{\"annotations\":{},\"labels\":{\"app\":\"thoth-core\",\"component\":\"naming-service\",\"service\":\"naming-service\",\"template\":\"naming-service-deployment\",\"thoth\":\"0.1.0\"},\"name\":\"naming-service\",\"namespace\":\"thoth-test-core\"},\"spec\":{\"replicas\":1,\"selector\":{\"service\":\"naming-service\"},\"template\":{\"metadata\":{\"labels\":{\"service\":\"naming-service\"}},\"spec\":{\"containers\":[{\"livenessProbe\":{\"httpGet\":{\"path\":\"/liveness\",\"port\":8080,\"scheme\":\"HTTP\"},\"initialDelaySeconds\":5,\"periodSeconds\":60,\"timeoutSeconds\":10},\"name\":\"naming-service\",\"ports\":[{\"containerPort\":8080,\"protocol\":\"TCP\"}],\"readinessProbe\":{\"httpGet\":{\"path\":\"/readiness\",\"port\":8080,\"scheme\":\"HTTP\"},\"initialDelaySeconds\":5,\"periodSeconds\":10,\"timeoutSeconds\":10},\"resources\":{\"limits\":{\"cpu\":\"500m\",\"memory\":\"256Mi\"},\"requests\":{\"cpu\":\"125m\",\"memory\":\"128Mi\"}}}]}},\"test\":false,\"triggers\":[{\"type\":\"ConfigChange\"},{\"imageChangeParams\":{\"automatic\":true,\"containerNames\":[\"naming-service\"],\"from\":{\"kind\":\"ImageStreamTag\",\"name\":\"naming-service:latest\"}},\"type\":\"ImageChange\"}]}}\n"
+                },
+                "creationTimestamp": "2018-04-25T19:07:25Z",
+                "generation": 33,
+                "labels": {
+                    "app": "thoth-core",
+                    "component": "naming-service",
+                    "service": "naming-service",
+                    "template": "naming-service-deployment",
+                    "thoth": "0.1.0"
+                },
+                "name": "naming-service",
+                "namespace": "thoth-test-core",
+                "resourceVersion": "81138589",
+                "selfLink": "/apis/apps.openshift.io/v1/namespaces/thoth-test-core/deploymentconfigs/naming-service",
+                "uid": "e4126517-48bb-11e8-837a-fa163e151577"
+            },
+            "spec": {
+                "replicas": 1,
+                "selector": {
+                    "service": "naming-service"
+                },
+                "strategy": {
+                    "activeDeadlineSeconds": 21600,
+                    "resources": {},
+                    "rollingParams": {
+                        "intervalSeconds": 1,
+                        "maxSurge": "25%",
+                        "maxUnavailable": "25%",
+                        "timeoutSeconds": 600,
+                        "updatePeriodSeconds": 1
+                    },
+                    "type": "Rolling"
+                },
+                "template": {
+                    "metadata": {
+                        "creationTimestamp": null,
+                        "labels": {
+                            "service": "naming-service"
+                        }
+                    },
+                    "spec": {
+                        "containers": [
+                            {
+                                "env": [
+                                    {
+                                        "name": "WEB_CONCURRENCY",
+                                        "value": "4"
+                                    }
+                                ],
+                                "image": "docker-registry.default.svc:5000/thoth-test-core/naming-service@sha256:e8b5a3cdf807f2e4c08723494ca47833d0e40103a4369575733b21d68e2635c4",
+                                "imagePullPolicy": "IfNotPresent",
+                                "livenessProbe": {
+                                    "failureThreshold": 3,
+                                    "httpGet": {
+                                        "path": "/liveness",
+                                        "port": 8080,
+                                        "scheme": "HTTP"
+                                    },
+                                    "initialDelaySeconds": 5,
+                                    "periodSeconds": 60,
+                                    "successThreshold": 1,
+                                    "timeoutSeconds": 10
+                                },
+                                "name": "naming-service",
+                                "ports": [
+                                    {
+                                        "containerPort": 8080,
+                                        "protocol": "TCP"
+                                    }
+                                ],
+                                "readinessProbe": {
+                                    "failureThreshold": 3,
+                                    "httpGet": {
+                                        "path": "/readiness",
+                                        "port": 8080,
+                                        "scheme": "HTTP"
+                                    },
+                                    "initialDelaySeconds": 5,
+                                    "periodSeconds": 10,
+                                    "successThreshold": 1,
+                                    "timeoutSeconds": 10
+                                },
+                                "resources": {
+                                    "limits": {
+                                        "cpu": "500m",
+                                        "memory": "256Mi"
+                                    },
+                                    "requests": {
+                                        "cpu": "125m",
+                                        "memory": "128Mi"
+                                    }
+                                },
+                                "terminationMessagePath": "/dev/termination-log",
+                                "terminationMessagePolicy": "File"
+                            }
+                        ],
+                        "dnsPolicy": "ClusterFirst",
+                        "restartPolicy": "Always",
+                        "schedulerName": "default-scheduler",
+                        "securityContext": {},
+                        "terminationGracePeriodSeconds": 30
+                    }
+                },
+                "test": false,
+                "triggers": [
+                    {
+                        "imageChangeParams": {
+                            "containerNames": [
+                                "naming-service"
+                            ],
+                            "from": {
+                                "kind": "ImageStreamTag",
+                                "name": "naming-service:test",
+                                "namespace": "thoth-test-core"
+                            },
+                            "lastTriggeredImage": "docker-registry.default.svc:5000/thoth-test-core/naming-service@sha256:e8b5a3cdf807f2e4c08723494ca47833d0e40103a4369575733b21d68e2635c4"
+                        },
+                        "type": "ImageChange"
+                    }
+                ]
+            },
+            "status": {
+                "availableReplicas": 1,
+                "conditions": [
+                    {
+                        "lastTransitionTime": "2018-06-11T13:31:17Z",
+                        "lastUpdateTime": "2018-06-11T13:31:17Z",
+                        "message": "Deployment config has minimum availability.",
+                        "status": "True",
+                        "type": "Available"
+                    },
+                    {
+                        "lastTransitionTime": "2018-06-12T11:35:04Z",
+                        "lastUpdateTime": "2018-06-12T11:35:06Z",
+                        "message": "replication controller \"naming-service-25\" successfully rolled out",
+                        "reason": "NewReplicationControllerAvailable",
+                        "status": "True",
+                        "type": "Progressing"
+                    }
+                ],
+                "details": {
+                    "causes": [
+                        {
+                            "type": "Manual"
+                        }
+                    ],
+                    "message": "manual change"
+                },
+                "latestVersion": 25,
+                "observedGeneration": 33,
+                "readyReplicas": 1,
+                "replicas": 1,
+                "unavailableReplicas": 0,
+                "updatedReplicas": 1
+            }
+        },
+        {
+            "apiVersion": "apps.openshift.io/v1",
+            "kind": "DeploymentConfig",
+            "metadata": {
+                "annotations": {
+                    "openshift.io/generated-by": "OpenShiftNewApp"
+                },
+                "creationTimestamp": "2018-05-17T13:06:52Z",
+                "generation": 2,
+                "labels": {
+                    "app": "pushgateway"
+                },
+                "name": "pushgateway",
+                "namespace": "thoth-test-core",
+                "resourceVersion": "80152252",
+                "selfLink": "/apis/apps.openshift.io/v1/namespaces/thoth-test-core/deploymentconfigs/pushgateway",
+                "uid": "2ac16b92-59d3-11e8-a78e-fa163e151577"
+            },
+            "spec": {
+                "replicas": 1,
+                "revisionHistoryLimit": 10,
+                "selector": {
+                    "app": "pushgateway",
+                    "deploymentconfig": "pushgateway"
+                },
+                "strategy": {
+                    "activeDeadlineSeconds": 21600,
+                    "resources": {},
+                    "rollingParams": {
+                        "intervalSeconds": 1,
+                        "maxSurge": "25%",
+                        "maxUnavailable": "25%",
+                        "timeoutSeconds": 600,
+                        "updatePeriodSeconds": 1
+                    },
+                    "type": "Rolling"
+                },
+                "template": {
+                    "metadata": {
+                        "annotations": {
+                            "openshift.io/generated-by": "OpenShiftNewApp"
+                        },
+                        "creationTimestamp": null,
+                        "labels": {
+                            "app": "pushgateway",
+                            "deploymentconfig": "pushgateway"
+                        }
+                    },
+                    "spec": {
+                        "containers": [
+                            {
+                                "image": "prom/pushgateway@sha256:91058cefa4b7d0f1649096cc4ba6f1f50b239eef40dd28ec05b3cf1f737fd4a8",
+                                "imagePullPolicy": "Always",
+                                "name": "pushgateway",
+                                "ports": [
+                                    {
+                                        "containerPort": 9091,
+                                        "protocol": "TCP"
+                                    }
+                                ],
+                                "resources": {},
+                                "terminationMessagePath": "/dev/termination-log",
+                                "terminationMessagePolicy": "File"
+                            }
+                        ],
+                        "dnsPolicy": "ClusterFirst",
+                        "restartPolicy": "Always",
+                        "schedulerName": "default-scheduler",
+                        "securityContext": {},
+                        "terminationGracePeriodSeconds": 30
+                    }
+                },
+                "test": false,
+                "triggers": [
+                    {
+                        "type": "ConfigChange"
+                    },
+                    {
+                        "imageChangeParams": {
+                            "automatic": true,
+                            "containerNames": [
+                                "pushgateway"
+                            ],
+                            "from": {
+                                "kind": "ImageStreamTag",
+                                "name": "pushgateway:latest",
+                                "namespace": "thoth-test-core"
+                            },
+                            "lastTriggeredImage": "prom/pushgateway@sha256:91058cefa4b7d0f1649096cc4ba6f1f50b239eef40dd28ec05b3cf1f737fd4a8"
+                        },
+                        "type": "ImageChange"
+                    }
+                ]
+            },
+            "status": {
+                "availableReplicas": 1,
+                "conditions": [
+                    {
+                        "lastTransitionTime": "2018-05-17T13:07:09Z",
+                        "lastUpdateTime": "2018-05-17T13:07:09Z",
+                        "message": "replication controller \"pushgateway-1\" successfully rolled out",
+                        "reason": "NewReplicationControllerAvailable",
+                        "status": "True",
+                        "type": "Progressing"
+                    },
+                    {
+                        "lastTransitionTime": "2018-06-11T13:34:00Z",
+                        "lastUpdateTime": "2018-06-11T13:34:00Z",
+                        "message": "Deployment config has minimum availability.",
+                        "status": "True",
+                        "type": "Available"
+                    }
+                ],
+                "details": {
+                    "causes": [
+                        {
+                            "type": "ConfigChange"
+                        }
+                    ],
+                    "message": "config change"
+                },
+                "latestVersion": 1,
+                "observedGeneration": 2,
+                "readyReplicas": 1,
+                "replicas": 1,
+                "unavailableReplicas": 0,
+                "updatedReplicas": 1
+            }
+        },
+        {
+            "apiVersion": "apps.openshift.io/v1",
+            "kind": "DeploymentConfig",
+            "metadata": {
+                "annotations": {
+                    "openshift.io/generated-by": "OpenShiftNewApp"
+                },
+                "creationTimestamp": "2018-04-19T14:01:42Z",
+                "generation": 36,
+                "labels": {
+                    "app": "thoth-core",
+                    "component": "result-api",
+                    "service": "result-api",
+                    "template": "thoth-result-api-deployment",
+                    "thoth": "0.1.0"
+                },
+                "name": "result-api",
+                "namespace": "thoth-test-core",
+                "resourceVersion": "81147174",
+                "selfLink": "/apis/apps.openshift.io/v1/namespaces/thoth-test-core/deploymentconfigs/result-api",
+                "uid": "302a84b9-43da-11e8-837a-fa163e151577"
+            },
+            "spec": {
+                "replicas": 1,
+                "revisionHistoryLimit": 10,
+                "selector": {
+                    "service": "result-api"
+                },
+                "strategy": {
+                    "activeDeadlineSeconds": 21600,
+                    "resources": {},
+                    "rollingParams": {
+                        "intervalSeconds": 1,
+                        "maxSurge": "25%",
+                        "maxUnavailable": "25%",
+                        "timeoutSeconds": 600,
+                        "updatePeriodSeconds": 1
+                    },
+                    "type": "Rolling"
+                },
+                "template": {
+                    "metadata": {
+                        "annotations": {
+                            "openshift.io/generated-by": "OpenShiftNewApp"
+                        },
+                        "creationTimestamp": null,
+                        "labels": {
+                            "service": "result-api"
+                        }
+                    },
+                    "spec": {
+                        "containers": [
+                            {
+                                "env": [
+                                    {
+                                        "name": "THOTH_DEPLOYMENT_NAME",
+                                        "valueFrom": {
+                                            "configMapKeyRef": {
+                                                "key": "storage-bucket-name",
+                                                "name": "thoth"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "name": "THOTH_PERSISTENT_VOLUME_PATH",
+                                        "valueFrom": {
+                                            "configMapKeyRef": {
+                                                "key": "ceph-results-path",
+                                                "name": "thoth"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "name": "THOTH_CEPH_HOST",
+                                        "valueFrom": {
+                                            "configMapKeyRef": {
+                                                "key": "ceph-host",
+                                                "name": "thoth"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "name": "THOTH_CEPH_BUCKET",
+                                        "valueFrom": {
+                                            "configMapKeyRef": {
+                                                "key": "ceph-bucket-name",
+                                                "name": "thoth"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "name": "THOTH_CEPH_BUCKET_PREFIX",
+                                        "valueFrom": {
+                                            "configMapKeyRef": {
+                                                "key": "ceph-bucket-prefix",
+                                                "name": "thoth"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "name": "THOTH_CEPH_KEY_ID",
+                                        "valueFrom": {
+                                            "secretKeyRef": {
+                                                "key": "ceph-key-id",
+                                                "name": "thoth"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "name": "THOTH_CEPH_SECRET_KEY",
+                                        "valueFrom": {
+                                            "secretKeyRef": {
+                                                "key": "ceph-secret-key",
+                                                "name": "thoth"
+                                            }
+                                        }
+                                    }
+                                ],
+                                "image": "docker-registry.default.svc:5000/thoth-test-core/result-api@sha256:2b183ba9c8290f84a913ad2421e2e151631cd5f0054c8a88980e301da5607065",
+                                "imagePullPolicy": "IfNotPresent",
+                                "livenessProbe": {
+                                    "failureThreshold": 3,
+                                    "httpGet": {
+                                        "path": "/liveness",
+                                        "port": 8080,
+                                        "scheme": "HTTP"
+                                    },
+                                    "initialDelaySeconds": 5,
+                                    "periodSeconds": 60,
+                                    "successThreshold": 1,
+                                    "timeoutSeconds": 10
+                                },
+                                "name": "result-api",
+                                "ports": [
+                                    {
+                                        "containerPort": 8080,
+                                        "protocol": "TCP"
+                                    }
+                                ],
+                                "readinessProbe": {
+                                    "failureThreshold": 3,
+                                    "httpGet": {
+                                        "path": "/readiness",
+                                        "port": 8080,
+                                        "scheme": "HTTP"
+                                    },
+                                    "initialDelaySeconds": 5,
+                                    "periodSeconds": 10,
+                                    "successThreshold": 1,
+                                    "timeoutSeconds": 10
+                                },
+                                "resources": {
+                                    "limits": {
+                                        "cpu": "500m",
+                                        "memory": "256Mi"
+                                    },
+                                    "requests": {
+                                        "cpu": "125m",
+                                        "memory": "128Mi"
+                                    }
+                                },
+                                "terminationMessagePath": "/dev/termination-log",
+                                "terminationMessagePolicy": "File"
+                            }
+                        ],
+                        "dnsPolicy": "ClusterFirst",
+                        "restartPolicy": "Always",
+                        "schedulerName": "default-scheduler",
+                        "securityContext": {},
+                        "terminationGracePeriodSeconds": 30
+                    }
+                },
+                "test": false,
+                "triggers": [
+                    {
+                        "imageChangeParams": {
+                            "containerNames": [
+                                "result-api"
+                            ],
+                            "from": {
+                                "kind": "ImageStreamTag",
+                                "name": "result-api:test",
+                                "namespace": "thoth-test-core"
+                            },
+                            "lastTriggeredImage": "docker-registry.default.svc:5000/thoth-test-core/result-api@sha256:2b183ba9c8290f84a913ad2421e2e151631cd5f0054c8a88980e301da5607065"
+                        },
+                        "type": "ImageChange"
+                    },
+                    {
+                        "type": "ConfigChange"
+                    }
+                ]
+            },
+            "status": {
+                "availableReplicas": 1,
+                "conditions": [
+                    {
+                        "lastTransitionTime": "2018-06-04T20:28:06Z",
+                        "lastUpdateTime": "2018-06-04T20:28:06Z",
+                        "message": "Deployment config has minimum availability.",
+                        "status": "True",
+                        "type": "Available"
+                    },
+                    {
+                        "lastTransitionTime": "2018-06-12T11:44:54Z",
+                        "lastUpdateTime": "2018-06-12T11:44:56Z",
+                        "message": "replication controller \"result-api-33\" successfully rolled out",
+                        "reason": "NewReplicationControllerAvailable",
+                        "status": "True",
+                        "type": "Progressing"
+                    }
+                ],
+                "details": {
+                    "causes": [
+                        {
+                            "type": "Manual"
+                        }
+                    ],
+                    "message": "manual change"
+                },
+                "latestVersion": 33,
+                "observedGeneration": 36,
+                "readyReplicas": 1,
+                "replicas": 1,
+                "unavailableReplicas": 0,
+                "updatedReplicas": 1
+            }
+        },
+        {
+            "apiVersion": "apps.openshift.io/v1",
+            "kind": "DeploymentConfig",
+            "metadata": {
+                "annotations": {
+                    "openshift.io/generated-by": "OpenShiftNewApp"
+                },
+                "creationTimestamp": "2018-04-19T11:36:23Z",
+                "generation": 78,
+                "labels": {
+                    "app": "thoth-core",
+                    "component": "user-api",
+                    "service": "user-api",
+                    "template": "thoth-user-api-deployment",
+                    "thoth": "0.1.0"
+                },
+                "name": "user-api",
+                "namespace": "thoth-test-core",
+                "resourceVersion": "81160247",
+                "selfLink": "/apis/apps.openshift.io/v1/namespaces/thoth-test-core/deploymentconfigs/user-api",
+                "uid": "e32c9705-43c5-11e8-837a-fa163e151577"
+            },
+            "spec": {
+                "replicas": 1,
+                "revisionHistoryLimit": 10,
+                "selector": {
+                    "service": "user-api"
+                },
+                "strategy": {
+                    "activeDeadlineSeconds": 21600,
+                    "resources": {},
+                    "rollingParams": {
+                        "intervalSeconds": 1,
+                        "maxSurge": "25%",
+                        "maxUnavailable": "25%",
+                        "timeoutSeconds": 600,
+                        "updatePeriodSeconds": 1
+                    },
+                    "type": "Rolling"
+                },
+                "template": {
+                    "metadata": {
+                        "annotations": {
+                            "openshift.io/generated-by": "OpenShiftNewApp"
+                        },
+                        "creationTimestamp": null,
+                        "labels": {
+                            "service": "user-api"
+                        }
+                    },
+                    "spec": {
+                        "containers": [
+                            {
+                                "env": [
+                                    {
+                                        "name": "APP_MODULE",
+                                        "value": "thoth_user_api.entrypoint:app"
+                                    },
+                                    {
+                                        "name": "APP_SERVICE_PORT",
+                                        "valueFrom": {
+                                            "configMapKeyRef": {
+                                                "key": "user-api-service-port",
+                                                "name": "thoth"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "name": "KUBERNETES_API_URL",
+                                        "value": "https://kubernetes.default.svc.cluster.local"
+                                    },
+                                    {
+                                        "name": "KUBERNETES_VERIFY_TLS",
+                                        "value": "0"
+                                    },
+                                    {
+                                        "name": "THOTH_RESULT_API_URL",
+                                        "value": "http://result-api"
+                                    },
+                                    {
+                                        "name": "THOTH_MIDDLETIER_POD_CPU_LIMIT",
+                                        "valueFrom": {
+                                            "configMapKeyRef": {
+                                                "key": "middletier-pod-cpu-limit",
+                                                "name": "thoth"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "name": "THOTH_MIDDLETIER_POD_MEMORY_LIMIT",
+                                        "valueFrom": {
+                                            "configMapKeyRef": {
+                                                "key": "middletier-pod-memory-limit",
+                                                "name": "thoth"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "name": "THOTH_MIDDLETIER_NAMESPACE",
+                                        "valueFrom": {
+                                            "configMapKeyRef": {
+                                                "key": "middletier-namespace",
+                                                "name": "thoth"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "name": "THOTH_BACKEND_NAMESPACE",
+                                        "valueFrom": {
+                                            "configMapKeyRef": {
+                                                "key": "backend-namespace",
+                                                "name": "thoth"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "name": "THOTH_DEPLOYMENT_NAME",
+                                        "valueFrom": {
+                                            "configMapKeyRef": {
+                                                "key": "storage-bucket-name",
+                                                "name": "thoth"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "name": "THOTH_CEPH_HOST",
+                                        "valueFrom": {
+                                            "configMapKeyRef": {
+                                                "key": "ceph-host",
+                                                "name": "thoth"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "name": "THOTH_CEPH_BUCKET",
+                                        "valueFrom": {
+                                            "configMapKeyRef": {
+                                                "key": "ceph-bucket-name",
+                                                "name": "thoth"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "name": "THOTH_CEPH_BUCKET_PREFIX",
+                                        "valueFrom": {
+                                            "configMapKeyRef": {
+                                                "key": "ceph-bucket-prefix",
+                                                "name": "thoth"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "name": "THOTH_SECRET",
+                                        "valueFrom": {
+                                            "secretKeyRef": {
+                                                "key": "thoth-secret",
+                                                "name": "thoth"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "name": "THOTH_JANUSGRAPH_HOST",
+                                        "value": "janusgraph"
+                                    },
+                                    {
+                                        "name": "THOTH_JANUSGRAPH_PORT",
+                                        "value": "80"
+                                    },
+                                    {
+                                        "name": "THOTH_USER_API_APP_SECRET_KEY",
+                                        "valueFrom": {
+                                            "secretKeyRef": {
+                                                "key": "app-secret-key",
+                                                "name": "thoth"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "name": "THOTH_CEPH_KEY_ID",
+                                        "valueFrom": {
+                                            "secretKeyRef": {
+                                                "key": "ceph-key-id",
+                                                "name": "thoth"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "name": "THOTH_CEPH_SECRET_KEY",
+                                        "valueFrom": {
+                                            "secretKeyRef": {
+                                                "key": "ceph-secret-key",
+                                                "name": "thoth"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "name": "RSYSLOG_HOST",
+                                        "valueFrom": {
+                                            "configMapKeyRef": {
+                                                "key": "rsyslog-host",
+                                                "name": "thoth"
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "name": "RSYSLOG_PORT",
+                                        "valueFrom": {
+                                            "configMapKeyRef": {
+                                                "key": "rsyslog-port",
+                                                "name": "thoth"
+                                            }
+                                        }
+                                    }
+                                ],
+                                "image": "docker-registry.default.svc:5000/thoth-test-core/user-api@sha256:d9d1a178d17b732787fea76a77902eead0f7c9a7731dbdf17efb987e2ef78902",
+                                "imagePullPolicy": "IfNotPresent",
+                                "livenessProbe": {
+                                    "failureThreshold": 3,
+                                    "httpGet": {
+                                        "path": "/liveness",
+                                        "port": 8080,
+                                        "scheme": "HTTP"
+                                    },
+                                    "initialDelaySeconds": 5,
+                                    "periodSeconds": 60,
+                                    "successThreshold": 1,
+                                    "timeoutSeconds": 10
+                                },
+                                "name": "user-api",
+                                "ports": [
+                                    {
+                                        "containerPort": 8080,
+                                        "protocol": "TCP"
+                                    }
+                                ],
+                                "readinessProbe": {
+                                    "failureThreshold": 3,
+                                    "httpGet": {
+                                        "path": "/readiness",
+                                        "port": 8080,
+                                        "scheme": "HTTP"
+                                    },
+                                    "initialDelaySeconds": 5,
+                                    "periodSeconds": 10,
+                                    "successThreshold": 1,
+                                    "timeoutSeconds": 10
+                                },
+                                "resources": {
+                                    "limits": {
+                                        "cpu": "500m",
+                                        "memory": "256Mi"
+                                    },
+                                    "requests": {
+                                        "cpu": "125m",
+                                        "memory": "128Mi"
+                                    }
+                                },
+                                "terminationMessagePath": "/dev/termination-log",
+                                "terminationMessagePolicy": "File"
+                            }
+                        ],
+                        "dnsPolicy": "ClusterFirst",
+                        "restartPolicy": "Always",
+                        "schedulerName": "default-scheduler",
+                        "securityContext": {},
+                        "serviceAccount": "analyzer",
+                        "serviceAccountName": "analyzer",
+                        "terminationGracePeriodSeconds": 30
+                    }
+                },
+                "test": false,
+                "triggers": [
+                    {
+                        "imageChangeParams": {
+                            "containerNames": [
+                                "user-api"
+                            ],
+                            "from": {
+                                "kind": "ImageStreamTag",
+                                "name": "user-api:test",
+                                "namespace": "thoth-test-core"
+                            },
+                            "lastTriggeredImage": "docker-registry.default.svc:5000/thoth-test-core/user-api@sha256:d9d1a178d17b732787fea76a77902eead0f7c9a7731dbdf17efb987e2ef78902"
+                        },
+                        "type": "ImageChange"
+                    }
+                ]
+            },
+            "status": {
+                "availableReplicas": 1,
+                "conditions": [
+                    {
+                        "lastTransitionTime": "2018-06-12T07:56:38Z",
+                        "lastUpdateTime": "2018-06-12T07:56:38Z",
+                        "message": "Deployment config has minimum availability.",
+                        "status": "True",
+                        "type": "Available"
+                    },
+                    {
+                        "lastTransitionTime": "2018-06-12T12:00:26Z",
+                        "lastUpdateTime": "2018-06-12T12:00:27Z",
+                        "message": "replication controller \"user-api-70\" successfully rolled out",
+                        "reason": "NewReplicationControllerAvailable",
+                        "status": "True",
+                        "type": "Progressing"
+                    }
+                ],
+                "details": {
+                    "causes": [
+                        {
+                            "type": "Manual"
+                        }
+                    ],
+                    "message": "manual change"
+                },
+                "latestVersion": 70,
+                "observedGeneration": 78,
+                "readyReplicas": 1,
+                "replicas": 1,
+                "unavailableReplicas": 0,
+                "updatedReplicas": 1
+            }
+        },
+        {
+            "apiVersion": "apps.openshift.io/v1",
+            "kind": "DeploymentConfig",
+            "metadata": {
+                "annotations": {
+                    "openshift.io/generated-by": "OpenShiftWebConsole"
+                },
+                "creationTimestamp": "2018-03-13T10:51:21Z",
+                "generation": 27,
+                "labels": {
+                    "app": "website"
+                },
+                "name": "website",
+                "namespace": "thoth-test-core",
+                "resourceVersion": "81015674",
+                "selfLink": "/apis/apps.openshift.io/v1/namespaces/thoth-test-core/deploymentconfigs/website",
+                "uid": "777bdd74-26ac-11e8-9afe-fa163e151577"
+            },
+            "spec": {
+                "replicas": 1,
+                "selector": {
+                    "deploymentconfig": "website"
+                },
+                "strategy": {
+                    "activeDeadlineSeconds": 21600,
+                    "resources": {},
+                    "rollingParams": {
+                        "intervalSeconds": 1,
+                        "maxSurge": "25%",
+                        "maxUnavailable": "25%",
+                        "timeoutSeconds": 600,
+                        "updatePeriodSeconds": 1
+                    },
+                    "type": "Rolling"
+                },
+                "template": {
+                    "metadata": {
+                        "creationTimestamp": null,
+                        "labels": {
+                            "app": "website",
+                            "deploymentconfig": "website"
+                        }
+                    },
+                    "spec": {
+                        "containers": [
+                            {
+                                "env": [
+                                    {
+                                        "name": "SESHETA_GITHUB_ACCESS_TOKEN",
+                                        "valueFrom": {
+                                            "secretKeyRef": {
+                                                "key": "sesheta-github-access-token",
+                                                "name": "github-access-tokens"
+                                            }
+                                        }
+                                    }
+                                ],
+                                "image": "docker-registry.default.svc:5000/thoth-test-core/website@sha256:27c5175364a1e1704ee99ea200b60972a9c1cff3ad760bda05dfefdd0dbca5c7",
+                                "imagePullPolicy": "Always",
+                                "name": "website",
+                                "ports": [
+                                    {
+                                        "containerPort": 8080,
+                                        "protocol": "TCP"
+                                    }
+                                ],
+                                "resources": {},
+                                "terminationMessagePath": "/dev/termination-log",
+                                "terminationMessagePolicy": "File"
+                            }
+                        ],
+                        "dnsPolicy": "ClusterFirst",
+                        "restartPolicy": "Always",
+                        "schedulerName": "default-scheduler",
+                        "securityContext": {},
+                        "terminationGracePeriodSeconds": 30
+                    }
+                },
+                "test": false,
+                "triggers": [
+                    {
+                        "imageChangeParams": {
+                            "automatic": true,
+                            "containerNames": [
+                                "website"
+                            ],
+                            "from": {
+                                "kind": "ImageStreamTag",
+                                "name": "website:latest",
+                                "namespace": "thoth-test-core"
+                            },
+                            "lastTriggeredImage": "docker-registry.default.svc:5000/thoth-test-core/website@sha256:27c5175364a1e1704ee99ea200b60972a9c1cff3ad760bda05dfefdd0dbca5c7"
+                        },
+                        "type": "ImageChange"
+                    },
+                    {
+                        "type": "ConfigChange"
+                    }
+                ]
+            },
+            "status": {
+                "availableReplicas": 1,
+                "conditions": [
+                    {
+                        "lastTransitionTime": "2018-04-27T12:49:22Z",
+                        "lastUpdateTime": "2018-04-27T12:49:22Z",
+                        "message": "Deployment config has minimum availability.",
+                        "status": "True",
+                        "type": "Available"
+                    },
+                    {
+                        "lastTransitionTime": "2018-06-12T09:09:52Z",
+                        "lastUpdateTime": "2018-06-12T09:09:53Z",
+                        "message": "replication controller \"website-25\" successfully rolled out",
+                        "reason": "NewReplicationControllerAvailable",
+                        "status": "True",
+                        "type": "Progressing"
+                    }
+                ],
+                "details": {
+                    "causes": [
+                        {
+                            "imageTrigger": {
+                                "from": {
+                                    "kind": "DockerImage",
+                                    "name": "docker-registry.default.svc:5000/thoth-test-core/website@sha256:27c5175364a1e1704ee99ea200b60972a9c1cff3ad760bda05dfefdd0dbca5c7"
+                                }
+                            },
+                            "type": "ImageChange"
+                        }
+                    ],
+                    "message": "image change"
+                },
+                "latestVersion": 25,
+                "observedGeneration": 27,
+                "readyReplicas": 1,
+                "replicas": 1,
+                "unavailableReplicas": 0,
+                "updatedReplicas": 1
+            }
+        }
+    ],
+    "kind": "List",
+    "metadata": {
+        "resourceVersion": "",
+        "selfLink": ""
+    }
+}

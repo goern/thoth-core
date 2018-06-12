@@ -87,7 +87,7 @@ def getImageStreamTagBySha(sha) -> str:
     ists = getImageStreamTags()
 
     for ist in ists:
-        if ist['sha'] == 'sha256:'+sha:
+        if ist['sha'] == sha:
             result.append(ist)
 
     return result
@@ -106,24 +106,22 @@ def getContainersByDeploymentConfig(deploymentconfig) -> List:
             reg, _img, sha = utils._splitFullRefImage(container['image'])
             ns, img = utils._splitImage(_img)
 
-            pods.append({
-                'pod': {
-                    'name': pod.metadata.name,
-                    'image': {
-                        'fullRef': container.image,
-                        'registry': reg,
-                        'namespace': ns,
-                        'image': img,
-                        'sha': sha
-                    },
-                    'containerName': container.name
-                }
-            })
+            if 'deploymentconfig' in pod['metadata']['labels'].keys():
+                if pod['metadata']['labels']['deploymentconfig'] == deploymentconfig:
+                    pods.append({
+                        'deployment': {
+                            'name': pod['metadata']['name'],
+                            'image': {
+                                'fullRef': container['image'],
+                                'registry': reg,
+                                'namespace': ns,
+                                'image': img,
+                                'sha': sha
+                            },
+                            'containerName': container['name'],
+                            'imageStreamTags': getImageStreamTagBySha(sha),
+                            'pullRequests': getPullRequestByNumber(101)
+                        }
+                    })
 
-    for dc in data:
-        if dc['deploymentConfig'] == deploymentconfig:
-            dc.pop('deploymentConfig', None)
-
-            result.append(dc)
-
-    return result
+    return pods
