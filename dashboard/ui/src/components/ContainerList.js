@@ -7,8 +7,7 @@ import {
 
 class ContainerList extends React.Component {
     renderItem = (item, index) => {
-        return ( <
-            ListView.Item key = { item.id }
+        return ( <ListView.Item key = { item.id }
             actions = { < div / > }
             leftContent = { < ListView.Icon name = "file-text-o" / > }
             additionalInfo = {
@@ -16,20 +15,16 @@ class ContainerList extends React.Component {
             heading = { item.containerName }
             description = {
                 item.containerName
-            } >
-            <
-            Row >
-            <
-            Col sm = { 11 } >
-            Replace this with some expanded information <
-            /Col> <
-            /Row> <
-            /ListView.Item>
+            }>
+            <Row>
+                <Col sm = { 11 }>Replace this with some expanded information about a Container...</Col>
+            </Row>
+        </ListView.Item>
         );
     };
 
     render() {
-        return <ListView > { this.props.containers.map(this.renderItem) } < /ListView>;
+        return <ListView > { this.props.containers.map(this.renderItem) } </ListView>;
     }
 }
 

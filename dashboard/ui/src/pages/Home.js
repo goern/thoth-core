@@ -2,8 +2,10 @@ import * as React from "react";
 import { connect } from "react-redux";
 
 import "./Home.css";
-import { getContainers } from "../actions/containers";
-import ContainerList from "../components/ContainerList"
+import {
+  getDeployments
+} from "../actions/deployments";
+import DeploymentList from "../components/DeploymentList"
 
 class Home extends React.Component {
   constructor(props) {
@@ -18,20 +20,20 @@ class Home extends React.Component {
   render() {
     return (
       <div className="home container-fluid">
-        <ContainerList containers={this.props.containers} />
+        <DeploymentList deployments={this.props.deployments} />
       </div>
     );
   }
 }
 
 function mapStateToProps(state) {
-  return state.containersReducer;
+  return state.deploymentsReducer;
 }
 
 function mapDispatchToProps(dispatch) {
   return {
     init: () => {
-      dispatch(getContainers());
+      dispatch(getDeployments());
     }
   };
 }
