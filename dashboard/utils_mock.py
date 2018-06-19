@@ -110,6 +110,7 @@ def getContainersByDeploymentConfig(deploymentconfig) -> List:
                 if pod['metadata']['labels']['deploymentconfig'] == deploymentconfig:
                     pods.append({
                         'deployment': {
+                            'uid': pod['metadata']['uid'],
                             'name': pod['metadata']['name'],
                             'image': {
                                 'fullRef': container['image'],

@@ -1,8 +1,10 @@
 import { combineReducers } from "redux";
-import { containersReducer } from "./containers";
+import {
+  deploymentsReducer
+} from "./deployments";
 
 const rootReducer = combineReducers({
-  containersReducer
+  deploymentsReducer
 });
 
 export default rootReducer;

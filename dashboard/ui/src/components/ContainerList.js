@@ -8,7 +8,7 @@ import {
 class ContainerList extends React.Component {
     renderItem = (item, index) => {
         return ( <ListView.Item key = { item.id }
-            actions = { < div / > }
+            actions = { <div /> }
             leftContent = { < ListView.Icon name = "file-text-o" / > }
             additionalInfo = {
                 [] }

@@ -9,16 +9,25 @@ class DeploymentList extends React.Component {
     renderItem = (item, index) => {
         return ( <ListView.Item key = { item.id }
             actions = { <div /> }
-            leftContent = { <ListView.Icon name = "file-text-o" /> }
+            leftContent = { <ListView.Icon name="file-text-o" /> }
             additionalInfo = {
                 []
             }
-            heading = { item.deploymentName }
+            heading = {
+                "Deployment: " + item.deployment.containerName
+            }
             description = {
-                item.deploymentName
+                "build from "+item.deployment.pullRequest.title
             }>
             <Row>
-                <Col sm={11}>JA! Replace this with some expanded information </Col>
+                <Col sm={11}>Image: <em>{item.deployment.image.fullRef}</em><br/>
+                    Tags: ... <br />
+                    Pods: {
+                        item.deployment.name
+                    } <br /> <br />
+                    This has been build from <b>{ item.deployment.pullRequest.title } </b> 
+                    opened by <em>{ item.deployment.pullRequest.user_login }</em>, the PR is <em>{ item.deployment.pullRequest.state }</em>.
+                </Col>
             </Row >
             </ListView.Item>
         );
